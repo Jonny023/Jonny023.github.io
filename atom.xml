@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-26T08:24:35.853Z</updated>
+  <updated>2018-10-26T08:34:00.504Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/10/26/nginx%E6%9C%AC%E5%9C%B0%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84%E5%8F%8Atomcat%E9%9B%86%E7%BE%A4session%E5%85%B1%E4%BA%AB/"/>
+    <id>http://yoursite.com/2018/10/26/nginx本地域名映射及tomcat集群session共享/</id>
+    <published>2018-10-26T08:34:00.483Z</published>
+    <updated>2018-10-26T08:34:00.504Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="本地域名映射"><a href="#本地域名映射" class="headerlink" title="本地域名映射"></a>本地域名映射</h2><ul><li>修改C:\Windows\System32\drivers\etc下的hosts文件，在hosts中添加</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1       www.cms.com</span><br></pre></td></tr></table></figure><h2 id="nginx配置集群配置"><a href="#nginx配置集群配置" class="headerlink" title="nginx配置集群配置"></a>nginx配置集群配置</h2><ul><li>修改nginx.conf文件</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line"></span><br><span class="line">    upstream local &#123;</span><br><span class="line">        server 127.0.0.1:8889;</span><br><span class="line">        server 127.0.0.1:8880;</span><br><span class="line">        ip_hash;  # 解决session共享问题</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    server &#123;</span><br><span class="line"></span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  localhost;</span><br><span class="line"></span><br><span class="line">location / &#123;</span><br><span class="line">    charset utf-8,gbk;  # 解决中文乱码问题。</span><br><span class="line">    proxy_pass http://local;</span><br><span class="line">&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;本地域名映射&quot;&gt;&lt;a href=&quot;#本地域名映射&quot; class=&quot;headerlink&quot; title=&quot;本地域名映射&quot;&gt;&lt;/a&gt;本地域名映射&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;修改C:\Windows\System32\drivers\etc下的hosts文件，在host
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title></title>

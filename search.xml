@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[StringUtils工具包join方法转字符]]></title>
+    <url>%2F2018%2F11%2F01%2FStringUtils%E5%B7%A5%E5%85%B7%E5%8C%85join%E6%96%B9%E6%B3%95%E8%BD%AC%E5%AD%97%E7%AC%A6%2F</url>
+    <content type="text"><![CDATA[作用 将集合、数组元素通过指定字符连接为一个字符串 StringUtils.join()跟JDK1.8里面的String.join()差不多 依赖12345&lt;dependency&gt; &lt;groupId&gt;commons-lang&lt;/groupId&gt; &lt;artifactId&gt;commons-lang&lt;/artifactId&gt; &lt;version&gt;2.6&lt;/version&gt;&lt;/dependency&gt; 具体代码123456789101112131415161718public static void main(String[] args) &#123; List list = new ArrayList(); list.add("市场"); list.add("销售"); list.add("运维"); // 集合 String str = StringUtils.join(list,","); System.out.println(str); // 数组 Object[] arrs = &#123;10010,10011,10086,10000&#125;; String s = StringUtils.join(arrs,","); System.out.println(s);&#125; 执行结果 注意 StringUtils转数组的时候，只能是Object类型的数组]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Oracle case when then分组排序]]></title>
+    <url>%2F2018%2F11%2F01%2FOracle%20case%20when%20then%E5%88%86%E7%BB%84%E6%8E%92%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[问题描述 Oracle数据库使用case when then end别名后，group by不能使用这个别名，但是order by可以 使用函数 TO_CHAR( SYSDATE, &#39;yyyy&#39; )作用是获取系统时间年份 EXTRACT( year FROM DATE_CREATED )作用是获取表字段年份 示例代码1234567891011121314151617181920SELECT COUNT( * ) AS rs,CASE WHEN TO_CHAR( SYSDATE, &apos;yyyy&apos; ) - TO_CHAR( NAT_DATE, &apos;yyyy&apos; ) &lt; 18 THEN &apos;17岁及其以下&apos; END nFROM PERSON_INFO WHERE EXTRACT( year FROM DATE_CREATED ) = &apos;2018&apos; AND person_status = 0GROUP BY CASE WHEN TO_CHAR( SYSDATE, &apos;yyyy&apos; ) - TO_CHAR( NAT_DATE, &apos;yyyy&apos; ) &lt; 18 THEN &apos;17岁及其以下&apos; ENDORDER BY n 目前解决方案是分组时直接使用case when then end完整代码，若有大佬有其他解决方案，请联系我，Thanks!]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>Oracle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nginx本地域名映射及tomcat集群session共享]]></title>
+    <url>%2F2018%2F10%2F26%2Fnginx%E6%9C%AC%E5%9C%B0%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84%E5%8F%8Atomcat%E9%9B%86%E7%BE%A4session%E5%85%B1%E4%BA%AB%2F</url>
+    <content type="text"><![CDATA[本地域名映射 修改C:\Windows\System32\drivers\etc下的hosts文件，在hosts中添加 1127.0.0.1 www.cms.com nginx配置集群配置 修改nginx.conf文件 1234567891011121314151617181920http &#123; upstream local &#123; server 127.0.0.1:8889; server 127.0.0.1:8880; ip_hash; # 解决session共享问题 &#125; server &#123; listen 80; server_name localhost; location / &#123; charset utf-8,gbk; # 解决中文乱码问题。 proxy_pass http://local; &#125; &#125; &#125;]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+        <tag>Tomcat</tag>
+        <tag>Tomcat集群</tag>
+      </tags>
+  </entry>
+</search>

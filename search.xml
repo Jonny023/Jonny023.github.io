@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[StringUtils工具包join方法转字符]]></title>
+    <title><![CDATA[nginx配置proxy_pass后，访问时路径丢失怎么办]]></title>
     <url>%2F2018%2F11%2F01%2Fnginx%E9%85%8D%E7%BD%AEproxy_pass%E5%90%8E%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%97%B6%E8%B7%AF%E5%BE%84%E4%B8%A2%E5%A4%B1%E6%80%8E%E4%B9%88%E5%8A%9E%2F</url>
     <content type="text"><![CDATA[应用场景 当我访问blog.first-blood.cn的时候，proxy_pass转发到jonny023.github.io这个域名下去了，而jonny023.github.io/upload/hello.jpg这个文件我通过blog.first-blood.cn/upload/hello.jpg访问就出现404 解决办法 此时在nginx的配置文件下的location配置下面添加一句 1proxy_set_header Host jonny023.github.io; 注意知道对不对，如果不对请来砍我1234567891011121314151617181920212223242526272829303132333435363738server &#123; listen 80; server_name blog.first-blood.cn; charset utf-8,gbk; root html; index index.html index.htm; location / &#123; proxy_set_header Host jonny023.github.io; #proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; proxy_pass https://jonny023.github.io; &#125; location ^~/archives/ &#123; proxy_pass https://jonny023.github.io/archives/; &#125; location ^~/uploads/ &#123; proxy_pass https://jonny023.github.io/uploads/; &#125; location /favico.ico &#123; proxy_pass https://jonny023.github.io; charset utf-8,gbk; expires 12h; &#125; location ~ .*\.(js|css|eot|otf|ttf|woff|woff2)?$ &#123; proxy_pass https://jonny023.github.io; charset utf-8,gbk; expires 12h; &#125; location ~* \.(eot|otf|ttf|woff|woff2)$ &#123; add_header Access-Control-Allow-Origin *; &#125;&#125;]]></content>
       <categories>

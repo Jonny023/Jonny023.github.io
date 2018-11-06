@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[yaml基本语法]]></title>
+    <url>%2F2018%2F11%2F06%2Fyaml%E7%94%A8%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[YAML用法 对象或键值对 1、普通用法123user: name: zhangsan age: 20 2、行内用法1user: &#123;name: zhangsan,age: 20&#125; 数组 1、普通用法1234pets: - pig - dog - cat 2、行内写法1ptes: [pig,dog,cat]]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>yaml</tag>
+        <tag>yml</tag>
+        <tag>application.yml</tag>
+        <tag>application.properties</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[windows以管理员运行快捷方式]]></title>
+    <url>%2F2018%2F11%2F06%2Fwindows%E4%BB%A5%E7%AE%A1%E7%90%86%E5%91%98%E8%BF%90%E8%A1%8C%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[Windows通过右键菜单，快捷打开CMD(Admin)窗口 创建一个后缀为.reg的文件，将下面的内容复制复制到该文件中 12345678910111213141516171819202122Windows Registry Editor Version 5.00; Created by: Shawn Brink; http://www.sevenforums.com; Tutorial: http://www.sevenforums.com/tutorials/47415-open-command-window-here-administrator.html[-HKEY_CLASSES_ROOT\Directory\shell\runas][HKEY_CLASSES_ROOT\Directory\shell\runas]@=&quot;Open CMD&quot;&quot;HasLUAShield&quot;=&quot;&quot;[HKEY_CLASSES_ROOT\Directory\shell\runas\command]@=&quot;cmd.exe /s /k pushd \&quot;%V\&quot;&quot;[-HKEY_CLASSES_ROOT\Directory\Background\shell\runas][HKEY_CLASSES_ROOT\Directory\Background\shell\runas]@=&quot;Open CMD&quot;&quot;HasLUAShield&quot;=&quot;&quot;[HKEY_CLASSES_ROOT\Directory\Background\shell\runas\command]@=&quot;cmd.exe /s /k pushd \&quot;%V\&quot;&quot;[-HKEY_CLASSES_ROOT\Drive\shell\runas][HKEY_CLASSES_ROOT\Drive\shell\runas]@=&quot;Open CMD&quot;&quot;HasLUAShield&quot;=&quot;&quot;[HKEY_CLASSES_ROOT\Drive\shell\runas\command]@=&quot;cmd.exe /s /k pushd \&quot;%V\&quot;&quot; 最后双击添加到注册表中]]></content>
+      <categories>
+        <category>Windows技巧</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>bat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2018%2F11%2F06%2FSpringBoot%E8%AF%BB%E5%8F%96yaml%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[title: SpringBoot读取yaml配置 categories: 后端 tags: SpringBoot yaml yml application.yml application.properties SpringBoot读取yaml配置的值 在application.yml中添加配置 1234567891011121314user: name: 张三 age: 19 sex: 男 maps: &#123;weight: 70,height: 170&#125; address: addr: 重庆市渝中区 lists: - 京东 - 淘宝 - 坑多多 新建Address类 123456789101112131415161718192021package com.atgenee.demo.config;public class Address &#123; private String addr; public String getAddr() &#123; return addr; &#125; public void setAddr(String addr) &#123; this.addr = addr; &#125; @Override public String toString() &#123; return "Address&#123;" + "addr='" + addr + '\'' + '&#125;'; &#125;&#125; 新建User类 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182package com.atgenee.demo.config;import org.springframework.boot.context.properties.ConfigurationProperties;import org.springframework.stereotype.Component;import java.util.List;import java.util.Map;@Component@ConfigurationProperties(prefix = "user")public class User &#123; private String name; private Integer age; private char sex; private Map&lt;String,Integer&gt; maps; private Address address; private List&lt;String&gt; lists; public String getName() &#123; return name; &#125; public void setName(String name) &#123; this.name = name; &#125; public Integer getAge() &#123; return age; &#125; public void setAge(Integer age) &#123; this.age = age; &#125; public char getSex() &#123; return sex; &#125; public void setSex(char sex) &#123; this.sex = sex; &#125; public Map&lt;String, Integer&gt; getMaps() &#123; return maps; &#125; public void setMaps(Map&lt;String, Integer&gt; maps) &#123; this.maps = maps; &#125; public Address getAddress() &#123; return address; &#125; public void setAddress(Address address) &#123; this.address = address; &#125; public List&lt;String&gt; getLists() &#123; return lists; &#125; public void setLists(List&lt;String&gt; lists) &#123; this.lists = lists; &#125; @Override public String toString() &#123; return "User&#123;" + "name='" + name + '\'' + ", age=" + age + ", sex=" + sex + ", maps=" + maps + ", address=" + address + ", lists=" + lists + '&#125;'; &#125;&#125; 新建测试类1234567891011121314151617181920212223package com.atgenee.demo;import com.atgenee.demo.config.User;import org.junit.Test;import org.junit.runner.RunWith;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.boot.test.context.SpringBootTest;import org.springframework.test.context.junit4.SpringRunner;@RunWith(SpringRunner.class)@SpringBootTestpublic class UserApplicationTests &#123; //注入配置类 @Autowired User user; @Test public void contextLoads() &#123; System.out.println(user); &#125;&#125; 测试结果1User&#123;name='Administrator', age=19, sex=男, maps=&#123;weight=70, height=170&#125;, address=Address&#123;addr='重庆市渝中区'&#125;, lists=[京东, 淘宝, 坑多多]&#125; 注意 yaml格式要求严格，以键值形式配置，键后冒号后面的空格一定不要丢（如: username: admin） @ConfigurationProperties注解依赖 12345&lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-configuration-processor&lt;/artifactId&gt; &lt;optional&gt;true&lt;/optional&gt;&lt;/dependency&gt;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[nginx配置proxy_pass后，访问时路径丢失怎么办]]></title>
     <url>%2F2018%2F11%2F01%2Fnginx%E9%85%8D%E7%BD%AEproxy_pass%E5%90%8E%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%97%B6%E8%B7%AF%E5%BE%84%E4%B8%A2%E5%A4%B1%E6%80%8E%E4%B9%88%E5%8A%9E%2F</url>
     <content type="text"><![CDATA[应用场景 当我访问blog.first-blood.cn的时候，proxy_pass转发到jonny023.github.io这个域名下去了，而jonny023.github.io/upload/hello.jpg这个文件我通过blog.first-blood.cn/upload/hello.jpg访问就出现404 解决办法 此时在nginx的配置文件下的location配置下面添加一句 1proxy_set_header Host jonny023.github.io; 注意知道对不对，如果不对请来砍我1234567891011121314151617181920212223242526272829303132333435363738server &#123; listen 80; server_name blog.first-blood.cn; charset utf-8,gbk; root html; index index.html index.htm; location / &#123; proxy_set_header Host jonny023.github.io; #proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; proxy_pass https://jonny023.github.io; &#125; location ^~/archives/ &#123; proxy_pass https://jonny023.github.io/archives/; &#125; location ^~/uploads/ &#123; proxy_pass https://jonny023.github.io/uploads/; &#125; location /favico.ico &#123; proxy_pass https://jonny023.github.io; charset utf-8,gbk; expires 12h; &#125; location ~ .*\.(js|css|eot|otf|ttf|woff|woff2)?$ &#123; proxy_pass https://jonny023.github.io; charset utf-8,gbk; expires 12h; &#125; location ~* \.(eot|otf|ttf|woff|woff2)$ &#123; add_header Access-Control-Allow-Origin *; &#125;&#125;]]></content>

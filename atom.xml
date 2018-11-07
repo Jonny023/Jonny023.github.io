@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-07T07:32:42.682Z</updated>
+  <updated>2018-11-07T09:18:14.417Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringBoot配置文件占位符</title>
+    <link href="http://yoursite.com/2018/11/07/SpringBoot%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
+    <id>http://yoursite.com/2018/11/07/SpringBoot配置文件占位符/</id>
+    <published>2018-11-07T09:18:14.417Z</published>
+    <updated>2018-11-07T09:18:14.417Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>在<code>properties</code>或<code>yaml</code>配置文件中是可以使用占位符的</p></blockquote><h3 id="1、随机数"><a href="#1、随机数" class="headerlink" title="1、随机数"></a>1、随机数</h3><ul><li><code>${random.value}</code> - 类似<code>uuid</code>的随机数，没有”<code>-</code>“连接</li><li><code>${random.int}</code> - 随机取整型范围内的一个值</li><li><code>${random.long}</code> - 随机取长整型范围内的一个值</li><li><code>${random.long(100,200)}</code> - 随机生成长整型<code>100-200</code>范围内的一个值</li><li><code>${random.uuid}</code> - 生成一个<code>uuid</code>，有短杠连接</li><li><code>${random.int(10)}</code> - 随机生成一个10以内的数</li><li><code>${random.int(100,200)}</code> - 随机生成一个<code>100-200</code> 范围以内的数</li></ul><blockquote><p>例子</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#user.username=$&#123;random.value&#125;</span><br><span class="line">#user.username=$&#123;random.int&#125;</span><br><span class="line">#user.username=$&#123;random.long&#125;</span><br><span class="line">#user.username=$&#123;random.uuid&#125;</span><br><span class="line">#user.username=$&#123;random.int(10)&#125;</span><br><span class="line">#user.username=$&#123;random.int(100,200)&#125;</span><br><span class="line">user.username=$&#123;random.long(100,200)&#125;</span><br></pre></td></tr></table></figure><h3 id="2、占位符"><a href="#2、占位符" class="headerlink" title="2、占位符"></a>2、占位符</h3><ul><li><code>${key:defaultValue}</code> - 若<code>key</code> 不存在，则将<code>defaultValue</code>的值赋值给取值的对象</li></ul><blockquote><p>例子</p></blockquote><ul><li><code>${user.username}</code> 当在配置文件中用这个表达式，而user.username未定义的时候，取值时会将<code>${user.username}</code> 当做字符串处理</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user.username=$&#123;test.xx:周伯通&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;在&lt;code&gt;properties&lt;/code&gt;或&lt;code&gt;yaml&lt;/code&gt;配置文件中是可以使用占位符的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1、随机数&quot;&gt;&lt;a href=&quot;#1、随机数&quot; class=&quot;headerlink
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="http://yoursite.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="SpringBoot" scheme="http://yoursite.com/tags/SpringBoot/"/>
+    
+      <category term="占位符" scheme="http://yoursite.com/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
+    
+      <category term="默认值" scheme="http://yoursite.com/tags/%E9%BB%98%E8%AE%A4%E5%80%BC/"/>
+    
+      <category term="SpEL" scheme="http://yoursite.com/tags/SpEL/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringBoot中@PropertySource和@ImportResource以及@Bean</title>

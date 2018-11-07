@@ -3,24 +3,26 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>分类 | Jonny&#39;s Blog</title>
+  <title>springboot配置文件占位符 | Jonny&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="SpringBoot占位符默认值SpEL">
   
   
   
-  <meta name="description" content="技术笔记">
-<meta name="keywords" content="Jonny,Grails,Groovy,Java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+  
+  <meta name="description" content="在properties或yaml配置文件中是可以使用占位符的  1、随机数 ${random.value} - 类似uuid的随机数，没有”-“连接 ${random.int} - 随机取整型范围内的一个值 ${random.long} - 随机取长整型范围内的一个值 ${random.long(100,200)} - 随机生成长整型100-200范围内的一个值 ${random.uuid} -">
+<meta name="keywords" content="SpringBoot,占位符,默认值,SpEL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot配置文件占位符">
+<meta property="og:url" content="http://yoursite.com/2018/11/07/SpringBoot配置文件占位符/index.html">
 <meta property="og:site_name" content="Jonny&#39;s Blog">
-<meta property="og:description" content="技术笔记">
+<meta property="og:description" content="在properties或yaml配置文件中是可以使用占位符的  1、随机数 ${random.value} - 类似uuid的随机数，没有”-“连接 ${random.int} - 随机取整型范围内的一个值 ${random.long} - 随机取长整型范围内的一个值 ${random.long(100,200)} - 随机生成长整型100-200范围内的一个值 ${random.uuid} -">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-01T09:04:15.579Z">
+<meta property="og:updated_time" content="2018-11-07T09:18:14.417Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="技术笔记">
+<meta name="twitter:title" content="SpringBoot配置文件占位符">
+<meta name="twitter:description" content="在properties或yaml配置文件中是可以使用占位符的  1、随机数 ${random.value} - 类似uuid的随机数，没有”-“连接 ${random.int} - 随机取整型范围内的一个值 ${random.long} - 随机取长整型范围内的一个值 ${random.long(100,200)} - 随机生成长整型100-200范围内的一个值 ${random.uuid} -">
   
     <link rel="alternate" href="/atom.xml" title="Jonny&#39;s Blog" type="application/atom+xml">
   
@@ -59,8 +61,6 @@
   
 
   
-    <link rel="stylesheet" href="/css/archive.css">
-  
   
   
     <link rel="stylesheet" href="/css/vdonate.css">
@@ -70,7 +70,7 @@
 </html>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -92,7 +92,7 @@
 
             
               <a class="brand" style="
-                 margin-top: 0px;">
+                 margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/author.jpg">
               </a>
             
@@ -161,257 +161,160 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><div class="archives-wrap" style="margin: 0px;">
-	<div class="col-lg-10 col-lg-offset-1 col-md-10">
-		<div class="archives-category-wrap">
-			<blockquote>
-			
-			  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows技巧/">Windows技巧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/后端/">后端</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据库/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/运维/">运维</a><span class="category-list-count">2</span></li></ul>
-			
-			</blockquote>
-		</div>
-		
-		<!-- 分类列表 -->
-
+          <section id="main" style="float:none;"><article id="post-SpringBoot配置文件占位符" style="width: 75%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
         
-        <div class="archives-wrap">
-            <div class="archive-year-wrap" id="Windows技巧">
-                <h1 class="archive-category">Windows技巧</h1>
-            </div>
-            <div class="archives">
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/11/06/windows以管理员运行快捷方式/" class="archive-article-date">
-	  <time datetime="2018-11-06T08:57:44.716Z" itemprop="datePublished">2018-11-06</time>
-	</a>
-
-      
   
     <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/06/windows以管理员运行快捷方式/">windows以管理员运行快捷方式</a>
+      SpringBoot配置文件占位符
     </h1>
   
 
-    </header>
-  </div>
-</article>
-                    
-                
-            </div>
-        </div>
-        
-        <div class="archives-wrap">
-            <div class="archive-year-wrap" id="后端">
-                <h1 class="archive-category">后端</h1>
-            </div>
-            <div class="archives">
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+      </header>
+    
+    <div class="article-meta">
       
-	<a href="/2018/11/07/SpringBoot配置文件占位符/" class="archive-article-date">
+	<a href="/2018/11/07/SpringBoot配置文件占位符/" class="article-date">
 	  <time datetime="2018-11-07T09:18:14.417Z" itemprop="datePublished">2018-11-07</time>
 	</a>
 
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/07/SpringBoot配置文件占位符/">SpringBoot配置文件占位符</a>
-    </h1>
-  
+    <a class="article-category-link" href="/categories/后端/">后端</a>
 
-    </header>
-  </div>
-</article>
-                    
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
       
-	<a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/" class="archive-article-date">
-	  <time datetime="2018-11-07T07:29:42.263Z" itemprop="datePublished">2018-11-07</time>
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		阅读量<span id="busuanzi_value_page_pv"></span>
+	</span>
 	</a>
 
+    </div>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/">SpringBoot中@PropertySource和@ImportResource以及@Bean</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-                    
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/11/07/SpringBoot单元测试/" class="archive-article-date">
-	  <time datetime="2018-11-07T07:29:42.263Z" itemprop="datePublished">2018-11-07</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/07/SpringBoot单元测试/">SpringBoot单元测试</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-                    
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/11/06/yaml用法/" class="archive-article-date">
-	  <time datetime="2018-11-06T08:57:44.717Z" itemprop="datePublished">2018-11-06</time>
-	</a>
+        <blockquote>
+<p>在<code>properties</code>或<code>yaml</code>配置文件中是可以使用占位符的</p>
+</blockquote>
+<h3 id="1、随机数"><a href="#1、随机数" class="headerlink" title="1、随机数"></a>1、随机数</h3><ul>
+<li><code>${random.value}</code> - 类似<code>uuid</code>的随机数，没有”<code>-</code>“连接</li>
+<li><code>${random.int}</code> - 随机取整型范围内的一个值</li>
+<li><code>${random.long}</code> - 随机取长整型范围内的一个值</li>
+<li><code>${random.long(100,200)}</code> - 随机生成长整型<code>100-200</code>范围内的一个值</li>
+<li><code>${random.uuid}</code> - 生成一个<code>uuid</code>，有短杠连接</li>
+<li><code>${random.int(10)}</code> - 随机生成一个10以内的数</li>
+<li><code>${random.int(100,200)}</code> - 随机生成一个<code>100-200</code> 范围以内的数</li>
+</ul>
+<blockquote>
+<p>例子</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#user.username=$&#123;random.value&#125;</span><br><span class="line">#user.username=$&#123;random.int&#125;</span><br><span class="line">#user.username=$&#123;random.long&#125;</span><br><span class="line">#user.username=$&#123;random.uuid&#125;</span><br><span class="line">#user.username=$&#123;random.int(10)&#125;</span><br><span class="line">#user.username=$&#123;random.int(100,200)&#125;</span><br><span class="line">user.username=$&#123;random.long(100,200)&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2、占位符"><a href="#2、占位符" class="headerlink" title="2、占位符"></a>2、占位符</h3><ul>
+<li><code>${key:defaultValue}</code> - 若<code>key</code> 不存在，则将<code>defaultValue</code>的值赋值给取值的对象</li>
+</ul>
+<blockquote>
+<p>例子</p>
+</blockquote>
+<ul>
+<li><code>${user.username}</code> 当在配置文件中用这个表达式，而user.username未定义的时候，取值时会将<code>${user.username}</code> 当做字符串处理</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user.username=$&#123;test.xx:周伯通&#125;</span><br></pre></td></tr></table></figure>
 
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/06/yaml用法/">yaml基本语法</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-                    
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+    </div>
+    <footer class="article-footer">
       
-	<a href="/2018/11/06/SpringBoot读取yaml配置/" class="archive-article-date">
-	  <time datetime="2018-11-06T08:57:44.714Z" itemprop="datePublished">2018-11-06</time>
-	</a>
+        <div id="donation_div"></div>
 
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1101/8875109d8ba04a0e9e886f0e38883b4e.jpg',
+  alipayImage: 'https://hellojava.cc/image/show/qrcodes-2017-11-XUW4ghrF5a03b4c37d75b.jpg'
+});
+</script>
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/06/SpringBoot读取yaml配置/">SpringBoot读取yaml配置</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-                    
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
       
-	<a href="/2018/11/01/StringUtils工具包join方法转字符/" class="archive-article-date">
-	  <time datetime="2018-11-01T07:36:36.429Z" itemprop="datePublished">2018-11-01</time>
-	</a>
-
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>本文作者:  </strong>Jonny
+          </li>
+          <li class="post-copyright-link">
+          <strong>本文链接:  </strong>
+          <a href="/2018/11/07/SpringBoot配置文件占位符/" target="_blank" title="SpringBoot配置文件占位符">http://yoursite.com/2018/11/07/SpringBoot配置文件占位符/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>版权声明:   </strong>
+            本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            许可协议。转载请注明出处
+          </li>
+         
+        </ul>
+<div>
+</div></div>
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/01/StringUtils工具包join方法转字符/">StringUtils工具包join方法转字符</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-                    
-                
-            </div>
-        </div>
+      
         
-        <div class="archives-wrap">
-            <div class="archive-year-wrap" id="数据库">
-                <h1 class="archive-category">数据库</h1>
-            </div>
-            <div class="archives">
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/11/01/Oracle case when then分组排序/" class="archive-article-date">
-	  <time datetime="2018-11-01T06:00:35.058Z" itemprop="datePublished">2018-11-01</time>
-	</a>
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
 
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/01/Oracle case when then分组排序/">Oracle case when then分组排序</a>
-    </h1>
-  
+		       if (typeof LivereTower === 'function') { return; }
 
-    </header>
-  </div>
-</article>
-                    
-                
-            </div>
-        </div>
-        
-        <div class="archives-wrap">
-            <div class="archive-year-wrap" id="运维">
-                <h1 class="archive-category">运维</h1>
-            </div>
-            <div class="archives">
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/11/01/nginx配置proxy_pass后，访问时路径丢失怎么办/" class="archive-article-date">
-	  <time datetime="2018-11-01T09:40:38.916Z" itemprop="datePublished">2018-11-01</time>
-	</a>
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
 
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/11/01/nginx配置proxy_pass后，访问时路径丢失怎么办/">nginx配置proxy_pass后，访问时路径丢失怎么办</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-                    
-                
-                    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/10/26/nginx本地域名映射及tomcat集群session共享/" class="archive-article-date">
-	  <time datetime="2018-10-26T08:34:00.483Z" itemprop="datePublished">2018-10-26</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/10/26/nginx本地域名映射及tomcat集群session共享/">nginx本地域名映射及tomcat集群session共享</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-                    
-                
-            </div>
-        </div>
-        
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
 	</div>
-</div></section>
+
+
+
+      
+      
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">SpringBoot中@PropertySource和@ImportResource以及@Bean</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、随机数"><span class="nav-number">1.</span> <span class="nav-text">1、随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、占位符"><span class="nav-number">2.</span> <span class="nav-text">2、占位符</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
         
       </div>
       
@@ -508,6 +411,8 @@
 
 
 
+  <script src="/js/dialog.js"></script>
+
 
 
 
@@ -590,6 +495,8 @@
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>

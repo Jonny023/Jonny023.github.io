@@ -13,7 +13,7 @@
 <meta name="keywords" content="Jonny,Grails,Groovy,Java">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jonny&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://blog.first-blood.cn/index.html">
 <meta property="og:site_name" content="Jonny&#39;s Blog">
 <meta property="og:description" content="技术笔记">
 <meta property="og:locale" content="zh-CN">
@@ -261,6 +261,60 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-SpringBoot配置Profile多环境支持" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/08/SpringBoot配置Profile多环境支持/">SpringBoot配置Profile多环境支持</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/08/SpringBoot配置Profile多环境支持/" class="article-date">
+	  <time datetime="2018-11-08T02:12:30.431Z" itemprop="datePublished">2018-11-08</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/后端/">后端</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式
+application-{profile}.properties或者application-{profile}.yml
+application-dev.properties 或application-dev.yml
+application-test.properties 或application-test.yml
+application-prod.properti...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/08/SpringBoot配置Profile多环境支持/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-SpringBoot配置文件优先级加载顺序" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
@@ -302,60 +356,6 @@ SpringBoot项目启动会去扫面项目以上目录位置的application.yml或a
         </p>
         <p class="article-more-link">
           <a href="/2018/11/08/SpringBoot配置文件优先级加载顺序/#more">阅读全文</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-SpringBoot配置Profile多环境支持" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/11/08/SpringBoot配置Profile多环境支持/">SpringBoot配置Profile多环境支持</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/08/SpringBoot配置Profile多环境支持/" class="article-date">
-	  <time datetime="2018-11-08T02:12:30.431Z" itemprop="datePublished">2018-11-08</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/后端/">后端</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式
-application-{profile}.properties或者application-{profile}.yml
-application-dev.properties 或application-dev.yml
-application-test.properties 或application-test.yml
-application-prod.properti...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/11/08/SpringBoot配置Profile多环境支持/#more">阅读全文</a>
         </p>
       
     </div>
@@ -433,68 +433,6 @@ ${random.int(10)} - 随机生成一个10以内的...
 
 
   
-    <article id="post-SpringBoot中@PropertySource和@ImportResource以及@Bean" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/">SpringBoot中@PropertySource和@ImportResource以及@Bean</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/" class="article-date">
-	  <time datetime="2018-11-07T07:29:42.263Z" itemprop="datePublished">2018-11-07</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/后端/">后端</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          
-@PropertySource
-加载指定的配置文件
-只能加载*.properties文件，不能加载yaml文件
-
-
-新建一个user.properties
-
-123456user.nickname=张三user.age=19user.sex=男user.maps.weight=70user.maps.height=170user.address.addr=重庆市渝中区
-
-UserBean
-
-123456789101112131415@Component@PropertySource(va...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/#more">阅读全文</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
     <article id="post-SpringBoot单元测试" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
@@ -539,6 +477,68 @@ application-dev.yml
         </p>
         <p class="article-more-link">
           <a href="/2018/11/07/SpringBoot单元测试/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-SpringBoot中@PropertySource和@ImportResource以及@Bean" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/">SpringBoot中@PropertySource和@ImportResource以及@Bean</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/" class="article-date">
+	  <time datetime="2018-11-07T07:29:42.263Z" itemprop="datePublished">2018-11-07</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/后端/">后端</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+@PropertySource
+加载指定的配置文件
+只能加载*.properties文件，不能加载yaml文件
+
+
+新建一个user.properties
+
+123456user.nickname=张三user.age=19user.sex=男user.maps.weight=70user.maps.height=170user.address.addr=重庆市渝中区
+
+UserBean
+
+123456789101112131415@Component@PropertySource(va...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/#more">阅读全文</a>
         </p>
       
     </div>

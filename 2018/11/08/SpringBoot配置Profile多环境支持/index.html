@@ -3,26 +3,26 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>springboot配置文件占位符 | Jonny&#39;s Blog</title>
+  <title>springboot配置profile多环境支持 | Jonny&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="SpringBoot占位符默认值SpEL">
+  <meta name="keywords" content="SpringBootProfile多环境配置">
   
   
   
   
-  <meta name="description" content="在properties或yaml配置文件中是可以使用占位符的  1、随机数 ${random.value} - 类似uuid的随机数，没有”-“连接 ${random.int} - 随机取整型范围内的一个值 ${random.long} - 随机取长整型范围内的一个值 ${random.long(100,200)} - 随机生成长整型100-200范围内的一个值 ${random.uuid} -">
-<meta name="keywords" content="SpringBoot,占位符,默认值,SpEL">
+  <meta name="description" content="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式 application-{profile}.properties或者application-{profile}.yml application-dev.properties 或application-dev.yml application-test.properties">
+<meta name="keywords" content="SpringBoot,Profile,多环境配置">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SpringBoot配置文件占位符">
-<meta property="og:url" content="http://yoursite.com/2018/11/07/SpringBoot配置文件占位符/index.html">
+<meta property="og:title" content="SpringBoot配置Profile多环境支持">
+<meta property="og:url" content="http://yoursite.com/2018/11/08/SpringBoot配置Profile多环境支持/index.html">
 <meta property="og:site_name" content="Jonny&#39;s Blog">
-<meta property="og:description" content="在properties或yaml配置文件中是可以使用占位符的  1、随机数 ${random.value} - 类似uuid的随机数，没有”-“连接 ${random.int} - 随机取整型范围内的一个值 ${random.long} - 随机取长整型范围内的一个值 ${random.long(100,200)} - 随机生成长整型100-200范围内的一个值 ${random.uuid} -">
+<meta property="og:description" content="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式 application-{profile}.properties或者application-{profile}.yml application-dev.properties 或application-dev.yml application-test.properties">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-07T09:18:14.417Z">
+<meta property="og:updated_time" content="2018-11-08T02:12:30.431Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SpringBoot配置文件占位符">
-<meta name="twitter:description" content="在properties或yaml配置文件中是可以使用占位符的  1、随机数 ${random.value} - 类似uuid的随机数，没有”-“连接 ${random.int} - 随机取整型范围内的一个值 ${random.long} - 随机取长整型范围内的一个值 ${random.long(100,200)} - 随机生成长整型100-200范围内的一个值 ${random.uuid} -">
+<meta name="twitter:title" content="SpringBoot配置Profile多环境支持">
+<meta name="twitter:description" content="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式 application-{profile}.properties或者application-{profile}.yml application-dev.properties 或application-dev.yml application-test.properties">
   
     <link rel="alternate" href="/atom.xml" title="Jonny&#39;s Blog" type="application/atom+xml">
   
@@ -161,7 +161,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-SpringBoot配置文件占位符" style="width: 75%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+          <section id="main" style="float:none;"><article id="post-SpringBoot配置Profile多环境支持" style="width: 75%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
     
@@ -169,7 +169,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      SpringBoot配置文件占位符
+      SpringBoot配置Profile多环境支持
     </h1>
   
 
@@ -177,8 +177,8 @@
     
     <div class="article-meta">
       
-	<a href="/2018/11/07/SpringBoot配置文件占位符/" class="article-date">
-	  <time datetime="2018-11-07T09:18:14.417Z" itemprop="datePublished">2018-11-07</time>
+	<a href="/2018/11/08/SpringBoot配置Profile多环境支持/" class="article-date">
+	  <time datetime="2018-11-08T02:12:30.431Z" itemprop="datePublished">2018-11-08</time>
 	</a>
 
       
@@ -194,32 +194,32 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>在<code>properties</code>或<code>yaml</code>配置文件中是可以使用占位符的</p>
-</blockquote>
-<h3 id="1、随机数"><a href="#1、随机数" class="headerlink" title="1、随机数"></a>1、随机数</h3><ul>
-<li><code>${random.value}</code> - 类似<code>uuid</code>的随机数，没有”<code>-</code>“连接</li>
-<li><code>${random.int}</code> - 随机取整型范围内的一个值</li>
-<li><code>${random.long}</code> - 随机取长整型范围内的一个值</li>
-<li><code>${random.long(100,200)}</code> - 随机生成长整型<code>100-200</code>范围内的一个值</li>
-<li><code>${random.uuid}</code> - 生成一个<code>uuid</code>，有短杠连接</li>
-<li><code>${random.int(10)}</code> - 随机生成一个10以内的数</li>
-<li><code>${random.int(100,200)}</code> - 随机生成一个<code>100-200</code> 范围以内的数</li>
+        <h3 id="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置"><a href="#Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置" class="headerlink" title="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置"></a>Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置</h3><h5 id="1、多Profile文件定义形式"><a href="#1、多Profile文件定义形式" class="headerlink" title="1、多Profile文件定义形式"></a>1、多Profile文件定义形式</h5><ul>
+<li><code>application-{profile}.properties</code>或者<code>application-{profile}.yml</code><ul>
+<li><code>application-dev.properties</code> 或<code>application-dev.yml</code></li>
+<li><code>application-test.properties</code> 或<code>application-test.yml</code></li>
+<li><code>application-prod.properties</code> 或<code>application-prod.yml</code></li>
 </ul>
-<blockquote>
-<p>例子</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#user.username=$&#123;random.value&#125;</span><br><span class="line">#user.username=$&#123;random.int&#125;</span><br><span class="line">#user.username=$&#123;random.long&#125;</span><br><span class="line">#user.username=$&#123;random.uuid&#125;</span><br><span class="line">#user.username=$&#123;random.int(10)&#125;</span><br><span class="line">#user.username=$&#123;random.int(100,200)&#125;</span><br><span class="line">user.username=$&#123;random.long(100,200)&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2、占位符"><a href="#2、占位符" class="headerlink" title="2、占位符"></a>2、占位符</h3><ul>
-<li><code>${key:defaultValue}</code> - 若<code>key</code> 不存在，则将<code>defaultValue</code>的值赋值给取值的对象</li>
+</li>
 </ul>
-<blockquote>
-<p>例子</p>
-</blockquote>
+<h5 id="2、多profile文档块形式"><a href="#2、多profile文档块形式" class="headerlink" title="2、多profile文档块形式"></a>2、多profile文档块形式</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8080</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">prod</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">test</span></span><br><span class="line">  </span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8082</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">dev</span></span><br></pre></td></tr></table></figure>
+<h3 id="激活方式"><a href="#激活方式" class="headerlink" title="激活方式"></a>激活方式</h3><h5 id="1、在yml或者properties中通过配置激活"><a href="#1、在yml或者properties中通过配置激活" class="headerlink" title="1、在yml或者properties中通过配置激活"></a>1、在yml或者properties中通过配置激活</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span></span><br><span class="line"><span class="attr">    active:</span> <span class="string">dev</span> <span class="comment"># 激活开发环境</span></span><br></pre></td></tr></table></figure>
+<h5 id="2、命令行激活"><a href="#2、命令行激活" class="headerlink" title="2、命令行激活"></a>2、命令行激活</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--spring.profiles.active=dev</span><br></pre></td></tr></table></figure>
 <ul>
-<li><code>${user.username}</code> 当在配置文件中用这个表达式，而user.username未定义的时候，取值时会将<code>${user.username}</code> 当做字符串处理</li>
+<li><p>此命令式在<code>IDEA</code>中<code>Program arguments</code>输入框中设置</p>
+</li>
+<li><p>部署到本地激活方式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user.username=$&#123;test.xx:周伯通&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="3、JVM虚拟机参数激活"><a href="#3、JVM虚拟机参数激活" class="headerlink" title="3、JVM虚拟机参数激活"></a>3、JVM虚拟机参数激活</h5><ul>
+<li><p>在<code>IDEA</code>中<code>VM Options</code>中输入框中设置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dspring.profiles.active=dev</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>部署到本地激活方式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar -Dspring.profiles.active=<span class="built_in">test</span> demo-0.0.1-SNAPSHOT.jar</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -246,7 +246,7 @@ var a = new Donate({
           </li>
           <li class="post-copyright-link">
           <strong>本文链接:  </strong>
-          <a href="/2018/11/07/SpringBoot配置文件占位符/" target="_blank" title="SpringBoot配置文件占位符">http://yoursite.com/2018/11/07/SpringBoot配置文件占位符/</a>
+          <a href="/2018/11/08/SpringBoot配置Profile多环境支持/" target="_blank" title="SpringBoot配置Profile多环境支持">http://yoursite.com/2018/11/08/SpringBoot配置Profile多环境支持/</a>
           </li>
           <li class="post-copyright-license">
             <strong>版权声明:   </strong>
@@ -292,19 +292,19 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2018/11/08/SpringBoot配置Profile多环境支持/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/11/08/SpringBoot配置文件优先级加载顺序/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          SpringBoot配置Profile多环境支持
+          SpringBoot配置文件优先级加载顺序
         
       </div>
     </a>
   
   
-    <a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/11/07/SpringBoot配置文件占位符/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">SpringBoot中@PropertySource和@ImportResource以及@Bean</div>
+      <div class="article-nav-title">SpringBoot配置文件占位符</div>
     </a>
   
 </nav>
@@ -318,7 +318,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、随机数"><span class="nav-number">1.</span> <span class="nav-text">1、随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、占位符"><span class="nav-number">2.</span> <span class="nav-text">2、占位符</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置"><span class="nav-number">1.</span> <span class="nav-text">Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、多Profile文件定义形式"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、多Profile文件定义形式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、多profile文档块形式"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、多profile文档块形式</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#激活方式"><span class="nav-number">2.</span> <span class="nav-text">激活方式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、在yml或者properties中通过配置激活"><span class="nav-number">2.0.1.</span> <span class="nav-text">1、在yml或者properties中通过配置激活</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、命令行激活"><span class="nav-number">2.0.2.</span> <span class="nav-text">2、命令行激活</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、JVM虚拟机参数激活"><span class="nav-number">2.0.3.</span> <span class="nav-text">3、JVM虚拟机参数激活</span></a></li></ol></li>
     
     </div>
   </aside>

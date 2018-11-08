@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[SpringBoot配置Profile多环境支持]]></title>
-    <url>%2F2018%2F11%2F08%2FSpringBoot%E9%85%8D%E7%BD%AEProfile%E5%A4%9A%E7%8E%AF%E5%A2%83%E6%94%AF%E6%8C%81%2F</url>
-    <content type="text"><![CDATA[Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式 application-{profile}.properties或者application-{profile}.yml application-dev.properties 或application-dev.yml application-test.properties 或application-test.yml application-prod.properties 或application-prod.yml 2、多profile文档块形式1234567891011121314151617---server: port: 8080spring: profiles: prod---server: port: 8081spring: profiles: test ---server: port: 8082spring: profiles: dev 激活方式1、在yml或者properties中通过配置激活123spring: profiles: active: dev # 激活开发环境 2、命令行激活1--spring.profiles.active=dev 此命令式在IDEA中Program arguments输入框中设置 部署到本地激活方式 1java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod 3、JVM虚拟机参数激活 在IDEA中VM Options中输入框中设置 1-Dspring.profiles.active=dev 部署到本地激活方式 1java -jar -Dspring.profiles.active=test demo-0.0.1-SNAPSHOT.jar]]></content>
+    <title><![CDATA[Java如何实现延时访问]]></title>
+    <url>%2F2018%2F11%2F08%2FJava%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BB%B6%E6%97%B6%E8%AE%BF%E9%97%AE%2F</url>
+    <content type="text"><![CDATA[调用某个方法后，我们需要程序过一段时间再去处理，就可以用多线程阻塞或Timer定时器来实现 方法一 多线程阻塞实现方式 MyTask12345678910111213141516171819202122232425262728package abc;import java.util.concurrent.*;public class MyTask implements Callable&lt;Integer&gt; &#123; private int num; private int price; public MyTask(int num, int price) &#123; this.num = num; this.price = price; &#125; public int add(int m, int n) &#123; System.out.println("执行运算..."+"\n"); return m * n; &#125; @Override public Integer call() throws Exception &#123; //睡眠5秒 Thread.sleep(5 * 1000L); return add(num,price); &#125;&#125; 测试类12345678910111213141516171819package abc;import org.junit.Test;import java.util.concurrent.FutureTask;public class ThreadTest &#123; @Test public void c() throws Exception &#123; MyTask task = new MyTask(10,20); FutureTask&lt;Integer&gt; resultObject = new FutureTask&lt;Integer&gt;(task); new Thread(resultObject).start(); //阻塞当前线程 int result = resultObject.get(); System.out.println(result); &#125;&#125; 方法二 通过Timer定时器实现 TestTimerTask1234567891011121314151617181920212223242526package abc;import java.util.Date;import java.util.TimerTask;public class TestTimerTask extends TimerTask &#123; private String username; private int age; public TestTimerTask(String username, int age) &#123; this.username = username; this.age = age; &#125; @Override public void run() &#123; // 处理业务逻辑 System.out.println("开始处理."); System.out.println("大家好，我叫" + username + "，今年" + age + "岁"); System.out.println("结束时间："+new Date().toLocaleString()); System.gc(); cancel(); &#125;&#125; 测试类12345678910111213141516package abc;import java.util.Date;import java.util.Timer;public class TimerTest &#123; public static void main(String[] args) &#123; System.out.println("开始时间："+new Date().toLocaleString()); Timer timer = new Timer(); System.out.println("一："+timer); timer.schedule(new TestTimerTask("张三",20),5000); System.out.println(timer); &#125;&#125; 输出结果12345678开始时间：2018-11-8 17:21:49一：java.util.Timer@6acbcfc0java.util.Timer@6acbcfc0开始处理.大家好，我叫张三，今年20岁结束时间：2018-11-8 17:21:54Process finished with exit code 0 注意 Timer测试不能用单元测试]]></content>
       <categories>
         <category>后端</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
-        <tag>Profile</tag>
-        <tag>多环境配置</tag>
+        <tag>Java</tag>
+        <tag>多线程</tag>
+        <tag>Callable</tag>
+        <tag>Timer</tag>
+        <tag>接口访问频率</tag>
       </tags>
   </entry>
   <entry>
@@ -24,6 +26,19 @@
         <tag>SpringBoot</tag>
         <tag>配置</tag>
         <tag>优先级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SpringBoot配置Profile多环境支持]]></title>
+    <url>%2F2018%2F11%2F08%2FSpringBoot%E9%85%8D%E7%BD%AEProfile%E5%A4%9A%E7%8E%AF%E5%A2%83%E6%94%AF%E6%8C%81%2F</url>
+    <content type="text"><![CDATA[Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式 application-{profile}.properties或者application-{profile}.yml application-dev.properties 或application-dev.yml application-test.properties 或application-test.yml application-prod.properties 或application-prod.yml 2、多profile文档块形式1234567891011121314151617---server: port: 8080spring: profiles: prod---server: port: 8081spring: profiles: test ---server: port: 8082spring: profiles: dev 激活方式1、在yml或者properties中通过配置激活123spring: profiles: active: dev # 激活开发环境 2、命令行激活1--spring.profiles.active=dev 此命令式在IDEA中Program arguments输入框中设置 部署到本地激活方式 1java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod 3、JVM虚拟机参数激活 在IDEA中VM Options中输入框中设置 1-Dspring.profiles.active=dev 部署到本地激活方式 1java -jar -Dspring.profiles.active=test demo-0.0.1-SNAPSHOT.jar]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>Profile</tag>
+        <tag>多环境配置</tag>
       </tags>
   </entry>
   <entry>

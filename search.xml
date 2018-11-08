@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[SpringBoot配置Profile多环境支持]]></title>
-    <url>%2F2018%2F11%2F08%2FSpringBoot%E9%85%8D%E7%BD%AEProfile%E5%A4%9A%E7%8E%AF%E5%A2%83%E6%94%AF%E6%8C%81%2F</url>
-    <content type="text"><![CDATA[Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式 application-{profile}.properties或者application-{profile}.yml application-dev.properties 或application-dev.yml application-test.properties 或application-test.yml application-prod.properties 或application-prod.yml 2、多profile文档块形式1234567891011121314151617---server: port: 8080spring: profiles: prod---server: port: 8081spring: profiles: test ---server: port: 8082spring: profiles: dev 激活方式1、在yml或者properties中通过配置激活123spring: profiles: active: dev # 激活开发环境 2、命令行激活1--spring.profiles.active=dev 此命令式在IDEA中Program arguments输入框中设置 部署到本地激活方式 1java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod 3、JVM虚拟机参数激活 在IDEA中VM Options中输入框中设置 1-Dspring.profiles.active=dev 部署到本地激活方式 1java -jar -Dspring.profiles.active=test demo-0.0.1-SNAPSHOT.jar]]></content>
-      <categories>
-        <category>后端</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>Profile</tag>
-        <tag>多环境配置</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[SpringBoot配置文件优先级加载顺序]]></title>
     <url>%2F2018%2F11%2F08%2FSpringBoot%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F%2F</url>
     <content type="text"><![CDATA[配置文件优先级从高到低顺序↓ file:./config/ - 优先级最高（项目根路径下的config） file:./ - 优先级第二 -（项目根路径下） classpath:/config/ - 优先级第三（项目resources/config下） classpath:/ - 优先级第四（项目resources根目录） SpringBoot项目启动会去扫面项目以上目录位置的application.yml或application.properties文件 以上位置的application.yml或application.properties遵循： 高优先级配置会覆盖低优先级配置 多个配置文件互补 比如，两个同名文件里面有相同的配置，相同的配置会被高优先级的配置覆盖 A配置优先级大于B配置 12server: port: 8080 B配置优先级小于A配置 123server: port: 8081 context-path: /test 项目启动后访问地址为：http://localhost:8080/test，这就是所谓的互补 项目打包运行后可通过命令指定配置文件位置1--spring.config.location=d:/application.properties 实例 1java -jar demo-xxx.jar --spring.config.location=d:/application.properties 这对于运维来说非常方便，在不破坏原配置情况下轻松修改少量配置就可以达到想要的效果]]></content>
@@ -24,6 +11,19 @@
         <tag>SpringBoot</tag>
         <tag>配置</tag>
         <tag>优先级</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SpringBoot配置Profile多环境支持]]></title>
+    <url>%2F2018%2F11%2F08%2FSpringBoot%E9%85%8D%E7%BD%AEProfile%E5%A4%9A%E7%8E%AF%E5%A2%83%E6%94%AF%E6%8C%81%2F</url>
+    <content type="text"><![CDATA[Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式 application-{profile}.properties或者application-{profile}.yml application-dev.properties 或application-dev.yml application-test.properties 或application-test.yml application-prod.properties 或application-prod.yml 2、多profile文档块形式1234567891011121314151617---server: port: 8080spring: profiles: prod---server: port: 8081spring: profiles: test ---server: port: 8082spring: profiles: dev 激活方式1、在yml或者properties中通过配置激活123spring: profiles: active: dev # 激活开发环境 2、命令行激活1--spring.profiles.active=dev 此命令式在IDEA中Program arguments输入框中设置 部署到本地激活方式 1java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod 3、JVM虚拟机参数激活 在IDEA中VM Options中输入框中设置 1-Dspring.profiles.active=dev 部署到本地激活方式 1java -jar -Dspring.profiles.active=test demo-0.0.1-SNAPSHOT.jar]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>Profile</tag>
+        <tag>多环境配置</tag>
       </tags>
   </entry>
   <entry>

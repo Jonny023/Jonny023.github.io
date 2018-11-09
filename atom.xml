@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.first-blood.cn/"/>
-  <updated>2018-11-08T10:26:21.122Z</updated>
+  <updated>2018-11-09T03:23:36.677Z</updated>
   <id>http://blog.first-blood.cn/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows中Google浏览器主页被恶意串改</title>
+    <link href="http://blog.first-blood.cn/2018/11/09/Windows%E4%B8%ADGoogle%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E6%81%B6%E6%84%8F%E4%B8%B2%E6%94%B9/"/>
+    <id>http://blog.first-blood.cn/2018/11/09/Windows中Google浏览器主页被恶意串改/</id>
+    <published>2018-11-09T03:23:36.677Z</published>
+    <updated>2018-11-09T03:23:36.677Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？</p></blockquote><h3 id="1、浏览器地址栏目输入chrome-version，查看命令行看看是否正常"><a href="#1、浏览器地址栏目输入chrome-version，查看命令行看看是否正常" class="headerlink" title="1、浏览器地址栏目输入chrome://version，查看命令行看看是否正常"></a>1、浏览器地址栏目输入<code>chrome://version</code>，查看命令行看看是否正常</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/cbdaababda78424dbd8b02b1908e69d4.png" alt=""></p><blockquote><p>很显然上图中的浏览器首页被篡改了，指向了后面的http地址</p></blockquote><h3 id="2、通过Google浏览器设置查看启动时是否指定了http开头的地址"><a href="#2、通过Google浏览器设置查看启动时是否指定了http开头的地址" class="headerlink" title="2、通过Google浏览器设置查看启动时是否指定了http开头的地址"></a>2、通过Google浏览器设置查看启动时是否指定了http开头的地址</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/7a5eb36d897f41359beae21fc9bf18b3.png" alt=""></p><blockquote><p>你可以通过这个设置来修改，若无效，请接着往下看</p></blockquote><h3 id="3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式"><a href="#3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式" class="headerlink" title="3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式"></a>3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/2d296e7f4e464332a247ec0d0082feeb.png" alt=""></p><h3 id="4、双击打开测试看看，主页是不是进入到了你设置页面，若不是"><a href="#4、双击打开测试看看，主页是不是进入到了你设置页面，若不是" class="headerlink" title="4、双击打开测试看看，主页是不是进入到了你设置页面，若不是"></a>4、双击打开测试看看，主页是不是进入到了你设置页面，若不是</h3><h3 id="5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行："><a href="#5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：" class="headerlink" title="5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行："></a>5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--flag-switches-begin --flag-switches-end</span><br></pre></td></tr></table></figure><h4 id="最后查看，已经修改过来了"><a href="#最后查看，已经修改过来了" class="headerlink" title="最后查看，已经修改过来了"></a>最后查看，已经修改过来了</h4><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/68bb418c8e8d42c8ab3c1d8424c58d29.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1、浏览器地址栏目输入chrome-version，查看命令行看看是否
+      
+    
+    </summary>
+    
+      <category term="Windows" scheme="http://blog.first-blood.cn/categories/Windows/"/>
+    
+    
+      <category term="Google浏览器" scheme="http://blog.first-blood.cn/tags/Google%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+      <category term="浏览器" scheme="http://blog.first-blood.cn/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+      <category term="恶意篡改" scheme="http://blog.first-blood.cn/tags/%E6%81%B6%E6%84%8F%E7%AF%A1%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot中的slf4j日志依赖关系</title>
+    <link href="http://blog.first-blood.cn/2018/11/09/SpringBoot%E4%B8%AD%E7%9A%84slf4j%E6%97%A5%E5%BF%97%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/"/>
+    <id>http://blog.first-blood.cn/2018/11/09/SpringBoot中的slf4j日志依赖关系/</id>
+    <published>2018-11-09T03:23:36.677Z</published>
+    <updated>2018-11-09T03:23:36.677Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="SpringBoot底层使用的是slf4j-logback来进行日志记录"><a href="#SpringBoot底层使用的是slf4j-logback来进行日志记录" class="headerlink" title="SpringBoot底层使用的是slf4j+logback来进行日志记录"></a><code>SpringBoot</code>底层使用的是<code>slf4j+logback</code>来进行日志记录</h2><ul><li>把其他<code>common-logging</code>、<code>log4j</code>、<code>java.util.logging</code>转换为<code>slf4j</code></li></ul><blockquote><p>底层依赖关系</p></blockquote><p><img src="https://user-gold-cdn.xitu.io/2018/11/9/166f434f9b8961b3?w=958&amp;h=388&amp;f=jpeg&amp;s=39667" alt=""></p><blockquote><p>关系如何转化</p></blockquote><p><img src="https://user-gold-cdn.xitu.io/2018/11/9/166f434f9b7780e6?w=782&amp;h=469&amp;f=png&amp;s=180692" alt=""></p><blockquote><p>底层通过偷梁换柱的方法，用jcl、jul、log4j中间转换包进行转化</p></blockquote><p><img src="https://user-gold-cdn.xitu.io/2018/11/9/166f434f9c037776?w=1171&amp;h=295&amp;f=png&amp;s=230792" alt=""></p><h4 id="如果要引入其他框架，必须将其中默认日志依赖剔除"><a href="#如果要引入其他框架，必须将其中默认日志依赖剔除" class="headerlink" title="如果要引入其他框架，必须将其中默认日志依赖剔除"></a>如果要引入其他框架，必须将其中默认日志依赖剔除</h4><blockquote><p><code>SpringBoot</code>从maven依赖中剔除<code>springframework:spring-core</code>中的<code>common-logging</code></p></blockquote><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.3.20.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>commons-logging<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>commons-logging<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><p>+++</p><h3 id="SpringBoot默认日志级别为INFO级别"><a href="#SpringBoot默认日志级别为INFO级别" class="headerlink" title="SpringBoot默认日志级别为INFO级别"></a><code>SpringBoot</code>默认日志级别为<code>INFO</code>级别</h3><ul><li>日志优先级从小到大顺序为：<ul><li><code>trace&lt;debug&lt;info&lt;warn&lt;error</code></li></ul></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"><span class="keyword">import</span> org.junit.runner.RunWith;</span><br><span class="line"><span class="keyword">import</span> org.slf4j.Logger;</span><br><span class="line"><span class="keyword">import</span> org.slf4j.LoggerFactory;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.test.context.SpringBootTest;</span><br><span class="line"><span class="keyword">import</span> org.springframework.test.context.junit4.SpringRunner;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RunWith</span>(SpringRunner.class)</span><br><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoApplicationTests</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    Logger log = LoggerFactory.getLogger(getClass());</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">contextLoads</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        log.trace(<span class="string">"trace日志"</span>);</span><br><span class="line">        log.debug(<span class="string">"debug日志"</span>);</span><br><span class="line">        log.info(<span class="string">"info日志"</span>);</span><br><span class="line">        log.warn(<span class="string">"warn日志"</span>);</span><br><span class="line">        log.error(<span class="string">"error日志"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>启动运行，控制台打印只打印了<code>info</code>及以上级别</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2018-11-09 00:13:36.899  INFO 8156 --- [main] com.example.demo.DemoApplicationTests    : info日志</span><br><span class="line">2018-11-09 00:13:36.900  WARN 8156 --- [main] com.example.demo.DemoApplicationTests    : warn日志</span><br><span class="line">2018-11-09 00:13:36.900 ERROR 8156 --- [main] com.example.demo.DemoApplicationTests    : error日志</span><br></pre></td></tr></table></figure><blockquote><p>日志基础配置</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 指定日志输入级别</span><br><span class="line">logging.level.com.example.demo=trace </span><br><span class="line"></span><br><span class="line"># 指定日志输出位置和日志文件名</span><br><span class="line">logging.file=./log/log.txt</span><br><span class="line"></span><br><span class="line"># 指定日志输出路径,若file和path同时配置,则file生效</span><br><span class="line"># 此配置默认生成文件为spring.log</span><br><span class="line">#logging.path=./log</span><br><span class="line"></span><br><span class="line"># 控制台日志输出格式</span><br><span class="line"># -5表示从左显示5个字符宽度</span><br><span class="line">logging.pattern.console=%d&#123;yyyy-MM-dd HH:mm:ss.SSS&#125; %highlight(%-5level) %boldYellow(%thread) | %boldGreen(%logger) | %msg%n</span><br><span class="line"></span><br><span class="line"># 文件中输出的格式</span><br><span class="line">logging.pattern.file=%d&#123;yyyy-MM-dd HH:mm:ss.SSS&#125; = [%thread] = %-5level = %logger&#123;50&#125; - %msg%n</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;SpringBoot底层使用的是slf4j-logback来进行日志记录&quot;&gt;&lt;a href=&quot;#SpringBoot底层使用的是slf4j-logback来进行日志记录&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot底层使用的是slf4
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
+    
+      <category term="slf4j" scheme="http://blog.first-blood.cn/tags/slf4j/"/>
+    
+      <category term="logback" scheme="http://blog.first-blood.cn/tags/logback/"/>
+    
+      <category term="日志" scheme="http://blog.first-blood.cn/tags/%E6%97%A5%E5%BF%97/"/>
+    
+      <category term="log4j" scheme="http://blog.first-blood.cn/tags/log4j/"/>
+    
+      <category term="common-logging" scheme="http://blog.first-blood.cn/tags/common-logging/"/>
+    
+  </entry>
   
   <entry>
     <title>Java如何实现延时访问</title>

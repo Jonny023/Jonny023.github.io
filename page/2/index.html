@@ -261,6 +261,120 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-SpringBoot读取yaml配置" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/06/SpringBoot读取yaml配置/">SpringBoot读取yaml配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/06/SpringBoot读取yaml配置/" class="article-date">
+	  <time datetime="2018-11-06T08:57:44.714Z" itemprop="datePublished">2018-11-06</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/后端/">后端</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          SpringBoot读取yaml配置的值
+在application.yml中添加配置
+
+1234567891011121314user:  name: 张三  age: 19  sex: 男  maps: &#123;weight: 70,height: 170&#125;  address:    addr: 重庆市渝中区  lists:    - 京东    - 淘宝    - 坑多多
+
+新建Address类
+
+123456789101112131415161718192021pack...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/06/SpringBoot读取yaml配置/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-nginx配置proxy_pass后，访问时路径丢失怎么办" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/01/nginx配置proxy_pass后，访问时路径丢失怎么办/">nginx配置proxy_pass后，访问时路径丢失怎么办</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/01/nginx配置proxy_pass后，访问时路径丢失怎么办/" class="article-date">
+	  <time datetime="2018-11-01T09:40:38.916Z" itemprop="datePublished">2018-11-01</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/运维/">运维</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          应用场景
+当我访问blog.first-blood.cn的时候，proxy_pass转发到jonny023.github.io这个域名下去了，而jonny023.github.io/upload/hello.jpg这个文件我通过blog.first-blood.cn/upload/hello.jpg访问就出现404
+
+解决办法
+此时在nginx的配置文件下的location配置下面添加一句
+
+1proxy_set_header Host jonny023.github.io;
+注意知道对不...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/01/nginx配置proxy_pass后，访问时路径丢失怎么办/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-StringUtils工具包join方法转字符" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     

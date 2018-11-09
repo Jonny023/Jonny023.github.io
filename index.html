@@ -35,10 +35,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
   <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    @font-face{font-family:futura-pt;src:url('fonts/glyphicons-halflings-regular.woff2');font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url('fonts/glyphicons-halflings-regular.woff2');font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url('fonts/glyphicons-halflings-regular.woff2');font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url('fonts/glyphicons-halflings-regular.woff2');font-weight:400;font-style:italic;}</style>
   <link rel="stylesheet" href="/css/style.css">
 
   <script src="/js/jquery-3.1.1.min.js"></script>
@@ -447,6 +447,60 @@ MyTask12345678910111213141516171819202122232425262728package abc;import java.uti
 
 
   
+    <article id="post-SpringBoot配置Profile多环境支持" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/08/SpringBoot配置Profile多环境支持/">SpringBoot配置Profile多环境支持</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/08/SpringBoot配置Profile多环境支持/" class="article-date">
+	  <time datetime="2018-11-08T02:12:30.431Z" itemprop="datePublished">2018-11-08</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/后端/">后端</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式
+application-{profile}.properties或者application-{profile}.yml
+application-dev.properties 或application-dev.yml
+application-test.properties 或application-test.yml
+application-prod.properti...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/08/SpringBoot配置Profile多环境支持/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-SpringBoot配置文件优先级加载顺序" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
@@ -488,60 +542,6 @@ SpringBoot项目启动会去扫面项目以上目录位置的application.yml或a
         </p>
         <p class="article-more-link">
           <a href="/2018/11/08/SpringBoot配置文件优先级加载顺序/#more">阅读全文</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-SpringBoot配置Profile多环境支持" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/11/08/SpringBoot配置Profile多环境支持/">SpringBoot配置Profile多环境支持</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/08/SpringBoot配置Profile多环境支持/" class="article-date">
-	  <time datetime="2018-11-08T02:12:30.431Z" itemprop="datePublished">2018-11-08</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/后端/">后端</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置1、多Profile文件定义形式
-application-{profile}.properties或者application-{profile}.yml
-application-dev.properties 或application-dev.yml
-application-test.properties 或application-test.yml
-application-prod.properti...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/11/08/SpringBoot配置Profile多环境支持/#more">阅读全文</a>
         </p>
       
     </div>
@@ -619,68 +619,6 @@ ${random.int(10)} - 随机生成一个10以内的...
 
 
   
-    <article id="post-SpringBoot单元测试" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/11/07/SpringBoot单元测试/">SpringBoot单元测试</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/07/SpringBoot单元测试/" class="article-date">
-	  <time datetime="2018-11-07T07:29:42.263Z" itemprop="datePublished">2018-11-07</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/后端/">后端</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          在测试类中读取某个application-开头的properties或yaml中的属性命名规则
-必须以application-开头
-application-dev.properties
-application-test.properties
-application-dev.yml
-application-dev.yml
-
-
-
-
-通过@ActiveProfiles来指定使用哪个文件
-
-例子12345678910111213141516171819202122232425262728packa...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/11/07/SpringBoot单元测试/#more">阅读全文</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
     <article id="post-SpringBoot中@PropertySource和@ImportResource以及@Bean" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
@@ -725,6 +663,68 @@ UserBean
         </p>
         <p class="article-more-link">
           <a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-SpringBoot单元测试" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/07/SpringBoot单元测试/">SpringBoot单元测试</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/07/SpringBoot单元测试/" class="article-date">
+	  <time datetime="2018-11-07T07:29:42.263Z" itemprop="datePublished">2018-11-07</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/后端/">后端</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          在测试类中读取某个application-开头的properties或yaml中的属性命名规则
+必须以application-开头
+application-dev.properties
+application-test.properties
+application-dev.yml
+application-dev.yml
+
+
+
+
+通过@ActiveProfiles来指定使用哪个文件
+
+例子12345678910111213141516171819202122232425262728packa...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/07/SpringBoot单元测试/#more">阅读全文</a>
         </p>
       
     </div>

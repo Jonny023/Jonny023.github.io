@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/11/9/166f434f9b8961b3?w=958&h=388&f=jpeg&s=39667">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/11/9/166f434f9b7780e6?w=782&h=469&f=png&s=180692">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/11/9/166f434f9c037776?w=1171&h=295&f=png&s=230792">
-<meta property="og:updated_time" content="2018-11-09T03:23:36.677Z">
+<meta property="og:updated_time" content="2018-11-09T06:16:47.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoot中的slf4j日志依赖关系">
 <meta name="twitter:description" content="SpringBoot底层使用的是slf4j+logback来进行日志记录 把其他common-logging、log4j、java.util.logging转换为slf4j   底层依赖关系    关系如何转化    底层通过偷梁换柱的方法，用jcl、jul、log4j中间转换包进行转化   如果要引入其他框架，必须将其中默认日志依赖剔除 SpringBoot从maven依赖中剔除springfr">
@@ -217,7 +217,7 @@
 <p><code>SpringBoot</code>从maven依赖中剔除<code>springframework:spring-core</code>中的<code>common-logging</code></p>
 </blockquote>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.3.20.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>commons-logging<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>commons-logging<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>+++</p>
+<hr>
 <h3 id="SpringBoot默认日志级别为INFO级别"><a href="#SpringBoot默认日志级别为INFO级别" class="headerlink" title="SpringBoot默认日志级别为INFO级别"></a><code>SpringBoot</code>默认日志级别为<code>INFO</code>级别</h3><ul>
 <li>日志优先级从小到大顺序为：<ul>
 <li><code>trace&lt;debug&lt;info&lt;warn&lt;error</code></li>

@@ -261,6 +261,114 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-Grails中如何绑定参数" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/20/Grails中如何绑定参数/">Grails中如何绑定参数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/20/Grails中如何绑定参数/" class="article-date">
+	  <time datetime="2018-11-20T07:06:41.390Z" itemprop="datePublished">2018-11-20</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Grails/">Grails</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          12345678910111213141516171819202122232425//参数绑定方式def bind = &#123;    //方式一    //所有属性赋值    def user = new UserInfo(params).save()    //方式二    //给所有属性赋值    def user1 = UserInfo.get(params.id)    user1.properties = params    user1.save()    //方式三   ...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/20/Grails中如何绑定参数/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-Grails3在utils中注入bean" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/20/Grails3在utils中注入bean/">Grails3在utils中注入bean</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/20/Grails3在utils中注入bean/" class="article-date">
+	  <time datetime="2018-11-20T07:06:41.387Z" itemprop="datePublished">2018-11-20</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Grails/">Grails</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Grails3在utils中注入bean
+在grails-app/conf/application.yml中配置用户基本信息
+
+1234user:  pserson-name: 张三  age: 20  sex: 男
+
+在grails-app/utils下面新建一个JavaBean类
+
+注意
+这里的包名最好跟init/Application.groovy下面的保持一致，比如：Application.groovy是在com.demo下面，那么这个JavaBean也必须是在com.demo下面...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/20/Grails3在utils中注入bean/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-Windows常用dos命令" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
@@ -723,127 +831,6 @@ application-dev.yml
         </p>
         <p class="article-more-link">
           <a href="/2018/11/07/SpringBoot单元测试/#more">阅读全文</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-SpringBoot中@PropertySource和@ImportResource以及@Bean" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/">SpringBoot中@PropertySource和@ImportResource以及@Bean</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/" class="article-date">
-	  <time datetime="2018-11-07T07:29:42.263Z" itemprop="datePublished">2018-11-07</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/后端/">后端</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          
-@PropertySource
-加载指定的配置文件
-只能加载*.properties文件，不能加载yaml文件
-
-
-新建一个user.properties
-
-123456user.nickname=张三user.age=19user.sex=男user.maps.weight=70user.maps.height=170user.address.addr=重庆市渝中区
-
-UserBean
-
-123456789101112131415@Component@PropertySource(va...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/#more">阅读全文</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-yaml用法" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/11/06/yaml用法/">yaml基本语法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/06/yaml用法/" class="article-date">
-	  <time datetime="2018-11-06T08:57:44.717Z" itemprop="datePublished">2018-11-06</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/后端/">后端</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          YAML用法
-对象或键值对
-
-1、普通用法123user: 	name: zhangsan	age: 20
-2、行内用法1user: &#123;name: zhangsan,age: 20&#125;
-
-数组
-
-1、普通用法1234pets:     - pig    - dog    - cat
-2、行内写法1ptes: [pig,dog,cat]
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/11/06/yaml用法/#more">阅读全文</a>
         </p>
       
     </div>

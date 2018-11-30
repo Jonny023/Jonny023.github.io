@@ -3,26 +3,23 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>grails中如何绑定参数 | Jonny&#39;s Blog</title>
+  <title>tag: 文件上传 | Jonny&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="GrailsGroovydatabindbind数据绑定">
   
   
   
-  
-  <meta name="description" content="12345678910111213141516171819202122232425//参数绑定方式def bind = &amp;#123;    //方式一    //所有属性赋值    def user = new UserInfo(params).save()    //方式二    //给所有属性赋值    def user1 = UserInfo.get(params.id)    user1.">
-<meta name="keywords" content="Grails,Groovy,databind,bind,数据绑定">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Grails中如何绑定参数">
-<meta property="og:url" content="http://blog.first-blood.cn/2018/11/20/Grails中如何绑定参数/index.html">
+  <meta name="description" content="技术笔记">
+<meta name="keywords" content="Jonny,Grails,Groovy,Java">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jonny&#39;s Blog">
+<meta property="og:url" content="http://blog.first-blood.cn/tags/文件上传/index.html">
 <meta property="og:site_name" content="Jonny&#39;s Blog">
-<meta property="og:description" content="12345678910111213141516171819202122232425//参数绑定方式def bind = &amp;#123;    //方式一    //所有属性赋值    def user = new UserInfo(params).save()    //方式二    //给所有属性赋值    def user1 = UserInfo.get(params.id)    user1.">
+<meta property="og:description" content="技术笔记">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-20T07:06:41.392Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Grails中如何绑定参数">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425//参数绑定方式def bind = &amp;#123;    //方式一    //所有属性赋值    def user = new UserInfo(params).save()    //方式二    //给所有属性赋值    def user1 = UserInfo.get(params.id)    user1.">
+<meta name="twitter:title" content="Jonny&#39;s Blog">
+<meta name="twitter:description" content="技术笔记">
   
     <link rel="alternate" href="/atom.xml" title="Jonny&#39;s Blog" type="application/atom+xml">
   
@@ -61,6 +58,8 @@
   
 
   
+    <link rel="stylesheet" href="/css/archive.css">
+  
   
   
     <link rel="stylesheet" href="/css/vdonate.css">
@@ -70,7 +69,7 @@
 </html>
 
 
-  <body data-spy="scroll" data-target="#toc" data-offset="50">
+  <body>
 
 
   
@@ -92,7 +91,7 @@
 
             
               <a class="brand" style="
-                 margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
+                 margin-top: 0px;">
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/author.jpg">
               </a>
             
@@ -161,142 +160,43 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-Grails中如何绑定参数" style="width: 75%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
+          <section id="main" style="float:none;">
+  
+  
+  
     
     
-      <header class="article-header">
-        
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      
+	<a href="/2018/11/30/Grails3文件上传到腾讯cos_oss/" class="archive-article-date">
+	  <time datetime="2018-11-30T02:34:33.460Z" itemprop="datePublished">2018-11-30</time>
+	</a>
+
+      
   
     <h1 class="thumb" itemprop="name">
-      Grails中如何绑定参数
+      <a class="archive-article-title" href="/2018/11/30/Grails3文件上传到腾讯cos_oss/">Grails3文件上传到腾讯COS(OSS)</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/20/Grails中如何绑定参数/" class="article-date">
-	  <time datetime="2018-11-20T07:06:41.390Z" itemprop="datePublished">2018-11-20</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/Grails/">Grails</a>
-
-      
-	<a class="article-views">
-	<span id="busuanzi_container_page_pv">
-		阅读量<span id="busuanzi_value_page_pv"></span>
-	</span>
-	</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//参数绑定方式</span></span><br><span class="line"><span class="keyword">def</span> bind = &#123;</span><br><span class="line">    <span class="comment">//方式一</span></span><br><span class="line">    <span class="comment">//所有属性赋值</span></span><br><span class="line">    <span class="keyword">def</span> user = <span class="keyword">new</span> UserInfo(params).save()</span><br><span class="line">    <span class="comment">//方式二</span></span><br><span class="line">    <span class="comment">//给所有属性赋值</span></span><br><span class="line">    <span class="keyword">def</span> user1 = UserInfo.get(params.id)</span><br><span class="line">    user1.properties = params</span><br><span class="line">    user1.save()</span><br><span class="line">    <span class="comment">//方式三</span></span><br><span class="line">    <span class="comment">//绑定指定对象，如/user/bind?user.username=张三&amp;user.age=20&amp;user.password=123456</span></span><br><span class="line">    <span class="keyword">def</span> user3 = <span class="keyword">new</span> UserInfo(params[<span class="string">'user'</span>])</span><br><span class="line">    user3.save()</span><br><span class="line">    <span class="comment">//方式四</span></span><br><span class="line">    <span class="comment">//给指定属性赋值</span></span><br><span class="line">    <span class="keyword">def</span> user4 = UserInfo.get(params.id)</span><br><span class="line">    user4.properties[<span class="string">'firstName'</span>,<span class="string">'lastName'</span>] = params</span><br><span class="line">    user4.save()</span><br><span class="line">    <span class="comment">//方式五，使用bindData方法</span></span><br><span class="line">    <span class="keyword">def</span> user5 = <span class="keyword">new</span> UserInfo()</span><br><span class="line">    bindData(user5, params)  <span class="comment">//给所有属性赋值</span></span><br><span class="line">    bindData(user5, params, [<span class="string">exclude:</span> [<span class="string">'username'</span>, <span class="string">'password'</span>]]) <span class="comment">//给exclude之外的属性赋值</span></span><br><span class="line">    bindData(user5, params, [<span class="string">include:</span> [<span class="string">"dataCreated"</span>, <span class="string">"sex"</span>]])   <span class="comment">//只给include中的属性赋值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <div id="donation_div"></div>
-
-<script src="/js/vdonate.js"></script>
-<script>
-var a = new Donate({
-  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
-  btnText: '打赏支持', // 可选参数，打赏按钮文字
-  el: document.getElementById('donation_div'),
-  wechatImage: 'https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1101/8875109d8ba04a0e9e886f0e38883b4e.jpg',
-  alipayImage: 'https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/51ba45d827704372b8770ca600f61df9.png'
-});
-</script>
-      
-      
-      <div>
-        <ul class="post-copyright">
-          <li class="post-copyright-author">
-          <strong>本文作者:  </strong>Jonny
-          </li>
-          <li class="post-copyright-link">
-          <strong>本文链接:  </strong>
-          <a href="/2018/11/20/Grails中如何绑定参数/" target="_blank" title="Grails中如何绑定参数">http://blog.first-blood.cn/2018/11/20/Grails中如何绑定参数/</a>
-          </li>
-          <li class="post-copyright-license">
-            <strong>版权声明:   </strong>
-            本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
-            许可协议。转载请注明出处
-          </li>
-         
-        </ul>
-<div>
-</div></div>
-      
-      
-        
-	<div id="comment">
-		<!-- 来必力City版安装代码 -->
-		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
-		<script type="text/javascript">
-		   (function(d, s) {
-		       var j, e = d.getElementsByTagName(s)[0];
-
-		       if (typeof LivereTower === 'function') { return; }
-
-		       j = d.createElement(s);
-		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-		       j.async = true;
-
-		       e.parentNode.insertBefore(j, e);
-		   })(document, 'script');
-		</script>
-		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-		</div>
-		<!-- City版安装代码已完成 -->
-	</div>
-
-
-
-      
-      
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2018/11/30/Grails3文件上传到腾讯cos_oss/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          Grails3文件上传到腾讯COS(OSS)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2018/11/20/Grails3在utils中注入bean/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">Grails3在utils中注入bean</div>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
 
-<!-- Table of Contents -->
-
-  <aside id="toc-sidebar">
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    
-        <ol class="nav">无</ol>
-    
-    </div>
-  </aside>
 
 </section>
         
@@ -395,8 +295,6 @@ var a = new Donate({
 
 
 
-  <script src="/js/dialog.js"></script>
-
 
 
 
@@ -479,8 +377,6 @@ var a = new Donate({
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
-  
-    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>

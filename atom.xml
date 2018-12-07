@@ -148,6 +148,38 @@
   </entry>
   
   <entry>
+    <title>Windows中Google浏览器主页被恶意串改</title>
+    <link href="http://blog.first-blood.cn/2018/11/09/Windows%E4%B8%ADGoogle%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E6%81%B6%E6%84%8F%E4%B8%B2%E6%94%B9/"/>
+    <id>http://blog.first-blood.cn/2018/11/09/Windows中Google浏览器主页被恶意串改/</id>
+    <published>2018-11-09T03:23:36.677Z</published>
+    <updated>2018-11-09T03:23:36.677Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？</p></blockquote><h3 id="1、浏览器地址栏目输入chrome-version，查看命令行看看是否正常"><a href="#1、浏览器地址栏目输入chrome-version，查看命令行看看是否正常" class="headerlink" title="1、浏览器地址栏目输入chrome://version，查看命令行看看是否正常"></a>1、浏览器地址栏目输入<code>chrome://version</code>，查看命令行看看是否正常</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/cbdaababda78424dbd8b02b1908e69d4.png" alt=""></p><blockquote><p>很显然上图中的浏览器首页被篡改了，指向了后面的http地址</p></blockquote><h3 id="2、通过Google浏览器设置查看启动时是否指定了http开头的地址"><a href="#2、通过Google浏览器设置查看启动时是否指定了http开头的地址" class="headerlink" title="2、通过Google浏览器设置查看启动时是否指定了http开头的地址"></a>2、通过Google浏览器设置查看启动时是否指定了http开头的地址</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/7a5eb36d897f41359beae21fc9bf18b3.png" alt=""></p><blockquote><p>你可以通过这个设置来修改，若无效，请接着往下看</p></blockquote><h3 id="3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式"><a href="#3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式" class="headerlink" title="3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式"></a>3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/2d296e7f4e464332a247ec0d0082feeb.png" alt=""></p><h3 id="4、双击打开测试看看，主页是不是进入到了你设置页面，若不是"><a href="#4、双击打开测试看看，主页是不是进入到了你设置页面，若不是" class="headerlink" title="4、双击打开测试看看，主页是不是进入到了你设置页面，若不是"></a>4、双击打开测试看看，主页是不是进入到了你设置页面，若不是</h3><h3 id="5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行："><a href="#5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：" class="headerlink" title="5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行："></a>5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--flag-switches-begin --flag-switches-end</span><br></pre></td></tr></table></figure><h4 id="最后查看，已经修改过来了"><a href="#最后查看，已经修改过来了" class="headerlink" title="最后查看，已经修改过来了"></a>最后查看，已经修改过来了</h4><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/68bb418c8e8d42c8ab3c1d8424c58d29.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1、浏览器地址栏目输入chrome-version，查看命令行看看是否
+      
+    
+    </summary>
+    
+      <category term="Windows" scheme="http://blog.first-blood.cn/categories/Windows/"/>
+    
+    
+      <category term="Google浏览器" scheme="http://blog.first-blood.cn/tags/Google%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+      <category term="浏览器" scheme="http://blog.first-blood.cn/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+      <category term="恶意篡改" scheme="http://blog.first-blood.cn/tags/%E6%81%B6%E6%84%8F%E7%AF%A1%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SpringBoot中的slf4j日志依赖关系</title>
     <link href="http://blog.first-blood.cn/2018/11/09/SpringBoot%E4%B8%AD%E7%9A%84slf4j%E6%97%A5%E5%BF%97%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/"/>
     <id>http://blog.first-blood.cn/2018/11/09/SpringBoot中的slf4j日志依赖关系/</id>
@@ -179,38 +211,6 @@
       <category term="log4j" scheme="http://blog.first-blood.cn/tags/log4j/"/>
     
       <category term="common-logging" scheme="http://blog.first-blood.cn/tags/common-logging/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows中Google浏览器主页被恶意串改</title>
-    <link href="http://blog.first-blood.cn/2018/11/09/Windows%E4%B8%ADGoogle%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E6%81%B6%E6%84%8F%E4%B8%B2%E6%94%B9/"/>
-    <id>http://blog.first-blood.cn/2018/11/09/Windows中Google浏览器主页被恶意串改/</id>
-    <published>2018-11-09T03:23:36.677Z</published>
-    <updated>2018-11-09T03:23:36.677Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？</p></blockquote><h3 id="1、浏览器地址栏目输入chrome-version，查看命令行看看是否正常"><a href="#1、浏览器地址栏目输入chrome-version，查看命令行看看是否正常" class="headerlink" title="1、浏览器地址栏目输入chrome://version，查看命令行看看是否正常"></a>1、浏览器地址栏目输入<code>chrome://version</code>，查看命令行看看是否正常</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/cbdaababda78424dbd8b02b1908e69d4.png" alt=""></p><blockquote><p>很显然上图中的浏览器首页被篡改了，指向了后面的http地址</p></blockquote><h3 id="2、通过Google浏览器设置查看启动时是否指定了http开头的地址"><a href="#2、通过Google浏览器设置查看启动时是否指定了http开头的地址" class="headerlink" title="2、通过Google浏览器设置查看启动时是否指定了http开头的地址"></a>2、通过Google浏览器设置查看启动时是否指定了http开头的地址</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/7a5eb36d897f41359beae21fc9bf18b3.png" alt=""></p><blockquote><p>你可以通过这个设置来修改，若无效，请接着往下看</p></blockquote><h3 id="3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式"><a href="#3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式" class="headerlink" title="3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式"></a>3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式</h3><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/2d296e7f4e464332a247ec0d0082feeb.png" alt=""></p><h3 id="4、双击打开测试看看，主页是不是进入到了你设置页面，若不是"><a href="#4、双击打开测试看看，主页是不是进入到了你设置页面，若不是" class="headerlink" title="4、双击打开测试看看，主页是不是进入到了你设置页面，若不是"></a>4、双击打开测试看看，主页是不是进入到了你设置页面，若不是</h3><h3 id="5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行："><a href="#5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：" class="headerlink" title="5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行："></a>5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--flag-switches-begin --flag-switches-end</span><br></pre></td></tr></table></figure><h4 id="最后查看，已经修改过来了"><a href="#最后查看，已经修改过来了" class="headerlink" title="最后查看，已经修改过来了"></a>最后查看，已经修改过来了</h4><p><img src="https://javaweb-community.oss-cn-beijing.aliyuncs.com/2018/1109/68bb418c8e8d42c8ab3c1d8424c58d29.png" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;1、浏览器地址栏目输入chrome-version，查看命令行看看是否
-      
-    
-    </summary>
-    
-      <category term="Windows" scheme="http://blog.first-blood.cn/categories/Windows/"/>
-    
-    
-      <category term="Google浏览器" scheme="http://blog.first-blood.cn/tags/Google%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-      <category term="浏览器" scheme="http://blog.first-blood.cn/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-      <category term="恶意篡改" scheme="http://blog.first-blood.cn/tags/%E6%81%B6%E6%84%8F%E7%AF%A1%E6%94%B9/"/>
     
   </entry>
   

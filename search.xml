@@ -59,19 +59,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Windows中Google浏览器主页被恶意串改]]></title>
-    <url>%2F2018%2F11%2F09%2FWindows%E4%B8%ADGoogle%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E6%81%B6%E6%84%8F%E4%B8%B2%E6%94%B9%2F</url>
-    <content type="text"><![CDATA[当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？ 1、浏览器地址栏目输入chrome://version，查看命令行看看是否正常 很显然上图中的浏览器首页被篡改了，指向了后面的http地址 2、通过Google浏览器设置查看启动时是否指定了http开头的地址 你可以通过这个设置来修改，若无效，请接着往下看 3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式 4、双击打开测试看看，主页是不是进入到了你设置页面，若不是5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：1--flag-switches-begin --flag-switches-end 最后查看，已经修改过来了]]></content>
-      <categories>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Google浏览器</tag>
-        <tag>浏览器</tag>
-        <tag>恶意篡改</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[SpringBoot中的slf4j日志依赖关系]]></title>
     <url>%2F2018%2F11%2F09%2FSpringBoot%E4%B8%AD%E7%9A%84slf4j%E6%97%A5%E5%BF%97%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%2F</url>
     <content type="text"><![CDATA[SpringBoot底层使用的是slf4j+logback来进行日志记录 把其他common-logging、log4j、java.util.logging转换为slf4j 底层依赖关系 关系如何转化 底层通过偷梁换柱的方法，用jcl、jul、log4j中间转换包进行转化 如果要引入其他框架，必须将其中默认日志依赖剔除 SpringBoot从maven依赖中剔除springframework:spring-core中的common-logging 1234567891011&lt;dependency&gt; &lt;groupId&gt;org.springframework&lt;/groupId&gt; &lt;artifactId&gt;spring-core&lt;/artifactId&gt; &lt;version&gt;4.3.20.RELEASE&lt;/version&gt; &lt;exclusions&gt; &lt;exclusion&gt; &lt;artifactId&gt;commons-logging&lt;/artifactId&gt; &lt;groupId&gt;commons-logging&lt;/groupId&gt; &lt;/exclusion&gt; &lt;/exclusions&gt;&lt;/dependency&gt; SpringBoot默认日志级别为INFO级别 日志优先级从小到大顺序为： trace&lt;debug&lt;info&lt;warn&lt;error 12345678910111213141516171819202122232425package com.example.demo;import org.junit.Test;import org.junit.runner.RunWith;import org.slf4j.Logger;import org.slf4j.LoggerFactory;import org.springframework.boot.test.context.SpringBootTest;import org.springframework.test.context.junit4.SpringRunner;@RunWith(SpringRunner.class)@SpringBootTestpublic class DemoApplicationTests &#123; Logger log = LoggerFactory.getLogger(getClass()); @Test public void contextLoads() &#123; log.trace("trace日志"); log.debug("debug日志"); log.info("info日志"); log.warn("warn日志"); log.error("error日志"); &#125;&#125; 启动运行，控制台打印只打印了info及以上级别 1232018-11-09 00:13:36.899 INFO 8156 --- [main] com.example.demo.DemoApplicationTests : info日志2018-11-09 00:13:36.900 WARN 8156 --- [main] com.example.demo.DemoApplicationTests : warn日志2018-11-09 00:13:36.900 ERROR 8156 --- [main] com.example.demo.DemoApplicationTests : error日志 日志基础配置 12345678910111213141516# 指定日志输入级别logging.level.com.example.demo=trace # 指定日志输出位置和日志文件名logging.file=./log/log.txt# 指定日志输出路径,若file和path同时配置,则file生效# 此配置默认生成文件为spring.log#logging.path=./log# 控制台日志输出格式# -5表示从左显示5个字符宽度logging.pattern.console=%d&#123;yyyy-MM-dd HH:mm:ss.SSS&#125; %highlight(%-5level) %boldYellow(%thread) | %boldGreen(%logger) | %msg%n# 文件中输出的格式logging.pattern.file=%d&#123;yyyy-MM-dd HH:mm:ss.SSS&#125; = [%thread] = %-5level = %logger&#123;50&#125; - %msg%n]]></content>
@@ -85,6 +72,19 @@
         <tag>日志</tag>
         <tag>log4j</tag>
         <tag>common-logging</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Windows中Google浏览器主页被恶意串改]]></title>
+    <url>%2F2018%2F11%2F09%2FWindows%E4%B8%ADGoogle%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E6%81%B6%E6%84%8F%E4%B8%B2%E6%94%B9%2F</url>
+    <content type="text"><![CDATA[当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？ 1、浏览器地址栏目输入chrome://version，查看命令行看看是否正常 很显然上图中的浏览器首页被篡改了，指向了后面的http地址 2、通过Google浏览器设置查看启动时是否指定了http开头的地址 你可以通过这个设置来修改，若无效，请接着往下看 3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式 4、双击打开测试看看，主页是不是进入到了你设置页面，若不是5、选中刚刚发送到桌面的快捷方式–单机右键–属性–目标–最后面先一个空格，然后加上命令行：1--flag-switches-begin --flag-switches-end 最后查看，已经修改过来了]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Google浏览器</tag>
+        <tag>浏览器</tag>
+        <tag>恶意篡改</tag>
       </tags>
   </entry>
   <entry>

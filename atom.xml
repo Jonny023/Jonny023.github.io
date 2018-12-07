@@ -5,9 +5,9 @@
   <subtitle>Jonny</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.first-blood.cn/"/>
+  <link href="https://www.grails.tw/"/>
   <updated>2018-11-30T02:34:33.461Z</updated>
-  <id>http://blog.first-blood.cn/</id>
+  <id>https://www.grails.tw/</id>
   
   <author>
     <name>Jonny</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Grails3文件上传到腾讯COS(OSS)</title>
-    <link href="http://blog.first-blood.cn/2018/11/30/Grails3%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E8%85%BE%E8%AE%AFcos_oss/"/>
-    <id>http://blog.first-blood.cn/2018/11/30/Grails3文件上传到腾讯cos_oss/</id>
+    <link href="https://www.grails.tw/2018/11/30/Grails3%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0%E8%85%BE%E8%AE%AFcos_oss/"/>
+    <id>https://www.grails.tw/2018/11/30/Grails3文件上传到腾讯cos_oss/</id>
     <published>2018-11-30T02:34:33.460Z</published>
     <updated>2018-11-30T02:34:33.461Z</updated>
     
@@ -34,23 +34,23 @@
     
     </summary>
     
-      <category term="Grails" scheme="http://blog.first-blood.cn/categories/Grails/"/>
+      <category term="Grails" scheme="https://www.grails.tw/categories/Grails/"/>
     
     
-      <category term="Grails" scheme="http://blog.first-blood.cn/tags/Grails/"/>
+      <category term="Grails" scheme="https://www.grails.tw/tags/Grails/"/>
     
-      <category term="文件上传" scheme="http://blog.first-blood.cn/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
+      <category term="文件上传" scheme="https://www.grails.tw/tags/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"/>
     
-      <category term="COS" scheme="http://blog.first-blood.cn/tags/COS/"/>
+      <category term="COS" scheme="https://www.grails.tw/tags/COS/"/>
     
-      <category term="OSS" scheme="http://blog.first-blood.cn/tags/OSS/"/>
+      <category term="OSS" scheme="https://www.grails.tw/tags/OSS/"/>
     
   </entry>
   
   <entry>
     <title>Grails中如何绑定参数</title>
-    <link href="http://blog.first-blood.cn/2018/11/20/Grails%E4%B8%AD%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%8F%82%E6%95%B0/"/>
-    <id>http://blog.first-blood.cn/2018/11/20/Grails中如何绑定参数/</id>
+    <link href="https://www.grails.tw/2018/11/20/Grails%E4%B8%AD%E5%A6%82%E4%BD%95%E7%BB%91%E5%AE%9A%E5%8F%82%E6%95%B0/"/>
+    <id>https://www.grails.tw/2018/11/20/Grails中如何绑定参数/</id>
     <published>2018-11-20T07:06:41.390Z</published>
     <updated>2018-11-20T07:06:41.392Z</updated>
     
@@ -65,25 +65,25 @@
     
     </summary>
     
-      <category term="Grails" scheme="http://blog.first-blood.cn/categories/Grails/"/>
+      <category term="Grails" scheme="https://www.grails.tw/categories/Grails/"/>
     
     
-      <category term="Grails" scheme="http://blog.first-blood.cn/tags/Grails/"/>
+      <category term="Grails" scheme="https://www.grails.tw/tags/Grails/"/>
     
-      <category term="Groovy" scheme="http://blog.first-blood.cn/tags/Groovy/"/>
+      <category term="Groovy" scheme="https://www.grails.tw/tags/Groovy/"/>
     
-      <category term="databind" scheme="http://blog.first-blood.cn/tags/databind/"/>
+      <category term="databind" scheme="https://www.grails.tw/tags/databind/"/>
     
-      <category term="bind" scheme="http://blog.first-blood.cn/tags/bind/"/>
+      <category term="bind" scheme="https://www.grails.tw/tags/bind/"/>
     
-      <category term="数据绑定" scheme="http://blog.first-blood.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/"/>
+      <category term="数据绑定" scheme="https://www.grails.tw/tags/%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A/"/>
     
   </entry>
   
   <entry>
     <title>Grails3在utils中注入bean</title>
-    <link href="http://blog.first-blood.cn/2018/11/20/Grails3%E5%9C%A8utils%E4%B8%AD%E6%B3%A8%E5%85%A5bean/"/>
-    <id>http://blog.first-blood.cn/2018/11/20/Grails3在utils中注入bean/</id>
+    <link href="https://www.grails.tw/2018/11/20/Grails3%E5%9C%A8utils%E4%B8%AD%E6%B3%A8%E5%85%A5bean/"/>
+    <id>https://www.grails.tw/2018/11/20/Grails3在utils中注入bean/</id>
     <published>2018-11-20T07:06:41.387Z</published>
     <updated>2018-11-20T07:06:41.388Z</updated>
     
@@ -98,23 +98,23 @@
     
     </summary>
     
-      <category term="Grails" scheme="http://blog.first-blood.cn/categories/Grails/"/>
+      <category term="Grails" scheme="https://www.grails.tw/categories/Grails/"/>
     
     
-      <category term="Grails" scheme="http://blog.first-blood.cn/tags/Grails/"/>
+      <category term="Grails" scheme="https://www.grails.tw/tags/Grails/"/>
     
-      <category term="Groovy" scheme="http://blog.first-blood.cn/tags/Groovy/"/>
+      <category term="Groovy" scheme="https://www.grails.tw/tags/Groovy/"/>
     
-      <category term="JavaBean" scheme="http://blog.first-blood.cn/tags/JavaBean/"/>
+      <category term="JavaBean" scheme="https://www.grails.tw/tags/JavaBean/"/>
     
-      <category term="Injection" scheme="http://blog.first-blood.cn/tags/Injection/"/>
+      <category term="Injection" scheme="https://www.grails.tw/tags/Injection/"/>
     
   </entry>
   
   <entry>
     <title>Windows常用dos命令</title>
-    <link href="http://blog.first-blood.cn/2018/11/14/Windows%E5%B8%B8%E7%94%A8dos%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.first-blood.cn/2018/11/14/Windows常用dos命令/</id>
+    <link href="https://www.grails.tw/2018/11/14/Windows%E5%B8%B8%E7%94%A8dos%E5%91%BD%E4%BB%A4/"/>
+    <id>https://www.grails.tw/2018/11/14/Windows常用dos命令/</id>
     <published>2018-11-14T04:03:18.633Z</published>
     <updated>2018-11-14T04:03:18.643Z</updated>
     
@@ -132,25 +132,25 @@
     
     </summary>
     
-      <category term="Windows技巧" scheme="http://blog.first-blood.cn/categories/Windows%E6%8A%80%E5%B7%A7/"/>
+      <category term="Windows技巧" scheme="https://www.grails.tw/categories/Windows%E6%8A%80%E5%B7%A7/"/>
     
     
-      <category term="Windows" scheme="http://blog.first-blood.cn/tags/Windows/"/>
+      <category term="Windows" scheme="https://www.grails.tw/tags/Windows/"/>
     
-      <category term="dos" scheme="http://blog.first-blood.cn/tags/dos/"/>
+      <category term="dos" scheme="https://www.grails.tw/tags/dos/"/>
     
-      <category term="cmd" scheme="http://blog.first-blood.cn/tags/cmd/"/>
+      <category term="cmd" scheme="https://www.grails.tw/tags/cmd/"/>
     
-      <category term="命令行" scheme="http://blog.first-blood.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+      <category term="命令行" scheme="https://www.grails.tw/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
-      <category term="bash" scheme="http://blog.first-blood.cn/tags/bash/"/>
+      <category term="bash" scheme="https://www.grails.tw/tags/bash/"/>
     
   </entry>
   
   <entry>
     <title>Windows中Google浏览器主页被恶意串改</title>
-    <link href="http://blog.first-blood.cn/2018/11/09/Windows%E4%B8%ADGoogle%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E6%81%B6%E6%84%8F%E4%B8%B2%E6%94%B9/"/>
-    <id>http://blog.first-blood.cn/2018/11/09/Windows中Google浏览器主页被恶意串改/</id>
+    <link href="https://www.grails.tw/2018/11/09/Windows%E4%B8%ADGoogle%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%BB%E9%A1%B5%E8%A2%AB%E6%81%B6%E6%84%8F%E4%B8%B2%E6%94%B9/"/>
+    <id>https://www.grails.tw/2018/11/09/Windows中Google浏览器主页被恶意串改/</id>
     <published>2018-11-09T03:23:36.677Z</published>
     <updated>2018-11-09T03:23:36.677Z</updated>
     
@@ -168,21 +168,21 @@
     
     </summary>
     
-      <category term="Windows" scheme="http://blog.first-blood.cn/categories/Windows/"/>
+      <category term="Windows" scheme="https://www.grails.tw/categories/Windows/"/>
     
     
-      <category term="Google浏览器" scheme="http://blog.first-blood.cn/tags/Google%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+      <category term="Google浏览器" scheme="https://www.grails.tw/tags/Google%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
-      <category term="浏览器" scheme="http://blog.first-blood.cn/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+      <category term="浏览器" scheme="https://www.grails.tw/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
-      <category term="恶意篡改" scheme="http://blog.first-blood.cn/tags/%E6%81%B6%E6%84%8F%E7%AF%A1%E6%94%B9/"/>
+      <category term="恶意篡改" scheme="https://www.grails.tw/tags/%E6%81%B6%E6%84%8F%E7%AF%A1%E6%94%B9/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot中的slf4j日志依赖关系</title>
-    <link href="http://blog.first-blood.cn/2018/11/09/SpringBoot%E4%B8%AD%E7%9A%84slf4j%E6%97%A5%E5%BF%97%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/"/>
-    <id>http://blog.first-blood.cn/2018/11/09/SpringBoot中的slf4j日志依赖关系/</id>
+    <link href="https://www.grails.tw/2018/11/09/SpringBoot%E4%B8%AD%E7%9A%84slf4j%E6%97%A5%E5%BF%97%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/"/>
+    <id>https://www.grails.tw/2018/11/09/SpringBoot中的slf4j日志依赖关系/</id>
     <published>2018-11-09T03:23:36.677Z</published>
     <updated>2018-11-09T06:16:47.685Z</updated>
     
@@ -197,27 +197,27 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
+      <category term="SpringBoot" scheme="https://www.grails.tw/tags/SpringBoot/"/>
     
-      <category term="slf4j" scheme="http://blog.first-blood.cn/tags/slf4j/"/>
+      <category term="slf4j" scheme="https://www.grails.tw/tags/slf4j/"/>
     
-      <category term="logback" scheme="http://blog.first-blood.cn/tags/logback/"/>
+      <category term="logback" scheme="https://www.grails.tw/tags/logback/"/>
     
-      <category term="日志" scheme="http://blog.first-blood.cn/tags/%E6%97%A5%E5%BF%97/"/>
+      <category term="日志" scheme="https://www.grails.tw/tags/%E6%97%A5%E5%BF%97/"/>
     
-      <category term="log4j" scheme="http://blog.first-blood.cn/tags/log4j/"/>
+      <category term="log4j" scheme="https://www.grails.tw/tags/log4j/"/>
     
-      <category term="common-logging" scheme="http://blog.first-blood.cn/tags/common-logging/"/>
+      <category term="common-logging" scheme="https://www.grails.tw/tags/common-logging/"/>
     
   </entry>
   
   <entry>
     <title>Java如何实现延时访问</title>
-    <link href="http://blog.first-blood.cn/2018/11/08/Java%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BB%B6%E6%97%B6%E8%AE%BF%E9%97%AE/"/>
-    <id>http://blog.first-blood.cn/2018/11/08/Java如何实现延时访问/</id>
+    <link href="https://www.grails.tw/2018/11/08/Java%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BB%B6%E6%97%B6%E8%AE%BF%E9%97%AE/"/>
+    <id>https://www.grails.tw/2018/11/08/Java如何实现延时访问/</id>
     <published>2018-11-08T10:26:21.121Z</published>
     <updated>2018-11-08T10:26:21.122Z</updated>
     
@@ -235,25 +235,54 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="Java" scheme="http://blog.first-blood.cn/tags/Java/"/>
+      <category term="Java" scheme="https://www.grails.tw/tags/Java/"/>
     
-      <category term="多线程" scheme="http://blog.first-blood.cn/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+      <category term="多线程" scheme="https://www.grails.tw/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
-      <category term="Callable" scheme="http://blog.first-blood.cn/tags/Callable/"/>
+      <category term="Callable" scheme="https://www.grails.tw/tags/Callable/"/>
     
-      <category term="Timer" scheme="http://blog.first-blood.cn/tags/Timer/"/>
+      <category term="Timer" scheme="https://www.grails.tw/tags/Timer/"/>
     
-      <category term="接口访问频率" scheme="http://blog.first-blood.cn/tags/%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E9%A2%91%E7%8E%87/"/>
+      <category term="接口访问频率" scheme="https://www.grails.tw/tags/%E6%8E%A5%E5%8F%A3%E8%AE%BF%E9%97%AE%E9%A2%91%E7%8E%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot配置Profile多环境支持</title>
+    <link href="https://www.grails.tw/2018/11/08/SpringBoot%E9%85%8D%E7%BD%AEProfile%E5%A4%9A%E7%8E%AF%E5%A2%83%E6%94%AF%E6%8C%81/"/>
+    <id>https://www.grails.tw/2018/11/08/SpringBoot配置Profile多环境支持/</id>
+    <published>2018-11-08T02:12:30.431Z</published>
+    <updated>2018-11-08T02:12:30.431Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置"><a href="#Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置" class="headerlink" title="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置"></a>Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置</h3><h5 id="1、多Profile文件定义形式"><a href="#1、多Profile文件定义形式" class="headerlink" title="1、多Profile文件定义形式"></a>1、多Profile文件定义形式</h5><ul><li><code>application-{profile}.properties</code>或者<code>application-{profile}.yml</code><ul><li><code>application-dev.properties</code> 或<code>application-dev.yml</code></li><li><code>application-test.properties</code> 或<code>application-test.yml</code></li><li><code>application-prod.properties</code> 或<code>application-prod.yml</code></li></ul></li></ul><h5 id="2、多profile文档块形式"><a href="#2、多profile文档块形式" class="headerlink" title="2、多profile文档块形式"></a>2、多profile文档块形式</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8080</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">prod</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">test</span></span><br><span class="line">  </span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8082</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">dev</span></span><br></pre></td></tr></table></figure><h3 id="激活方式"><a href="#激活方式" class="headerlink" title="激活方式"></a>激活方式</h3><h5 id="1、在yml或者properties中通过配置激活"><a href="#1、在yml或者properties中通过配置激活" class="headerlink" title="1、在yml或者properties中通过配置激活"></a>1、在yml或者properties中通过配置激活</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span></span><br><span class="line"><span class="attr">    active:</span> <span class="string">dev</span> <span class="comment"># 激活开发环境</span></span><br></pre></td></tr></table></figure><h5 id="2、命令行激活"><a href="#2、命令行激活" class="headerlink" title="2、命令行激活"></a>2、命令行激活</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--spring.profiles.active=dev</span><br></pre></td></tr></table></figure><ul><li><p>此命令式在<code>IDEA</code>中<code>Program arguments</code>输入框中设置</p></li><li><p>部署到本地激活方式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod</span><br></pre></td></tr></table></figure></li></ul><h5 id="3、JVM虚拟机参数激活"><a href="#3、JVM虚拟机参数激活" class="headerlink" title="3、JVM虚拟机参数激活"></a>3、JVM虚拟机参数激活</h5><ul><li><p>在<code>IDEA</code>中<code>VM Options</code>中输入框中设置</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dspring.profiles.active=dev</span><br></pre></td></tr></table></figure></li><li><p>部署到本地激活方式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar -Dspring.profiles.active=<span class="built_in">test</span> demo-0.0.1-SNAPSHOT.jar</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置&quot;&gt;&lt;a href=&quot;#Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置&quot; class=&quot;headerlink&quot; title
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="SpringBoot" scheme="https://www.grails.tw/tags/SpringBoot/"/>
+    
+      <category term="Profile" scheme="https://www.grails.tw/tags/Profile/"/>
+    
+      <category term="多环境配置" scheme="https://www.grails.tw/tags/%E5%A4%9A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot配置文件优先级加载顺序</title>
-    <link href="http://blog.first-blood.cn/2018/11/08/SpringBoot%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F/"/>
-    <id>http://blog.first-blood.cn/2018/11/08/SpringBoot配置文件优先级加载顺序/</id>
+    <link href="https://www.grails.tw/2018/11/08/SpringBoot%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7%E5%8A%A0%E8%BD%BD%E9%A1%BA%E5%BA%8F/"/>
+    <id>https://www.grails.tw/2018/11/08/SpringBoot配置文件优先级加载顺序/</id>
     <published>2018-11-08T02:12:30.431Z</published>
     <updated>2018-11-08T02:12:30.431Z</updated>
     
@@ -269,50 +298,21 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
+      <category term="SpringBoot" scheme="https://www.grails.tw/tags/SpringBoot/"/>
     
-      <category term="配置" scheme="http://blog.first-blood.cn/tags/%E9%85%8D%E7%BD%AE/"/>
+      <category term="配置" scheme="https://www.grails.tw/tags/%E9%85%8D%E7%BD%AE/"/>
     
-      <category term="优先级" scheme="http://blog.first-blood.cn/tags/%E4%BC%98%E5%85%88%E7%BA%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SpringBoot配置Profile多环境支持</title>
-    <link href="http://blog.first-blood.cn/2018/11/08/SpringBoot%E9%85%8D%E7%BD%AEProfile%E5%A4%9A%E7%8E%AF%E5%A2%83%E6%94%AF%E6%8C%81/"/>
-    <id>http://blog.first-blood.cn/2018/11/08/SpringBoot配置Profile多环境支持/</id>
-    <published>2018-11-08T02:12:30.431Z</published>
-    <updated>2018-11-08T02:12:30.431Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置"><a href="#Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置" class="headerlink" title="Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置"></a>Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置</h3><h5 id="1、多Profile文件定义形式"><a href="#1、多Profile文件定义形式" class="headerlink" title="1、多Profile文件定义形式"></a>1、多Profile文件定义形式</h5><ul><li><code>application-{profile}.properties</code>或者<code>application-{profile}.yml</code><ul><li><code>application-dev.properties</code> 或<code>application-dev.yml</code></li><li><code>application-test.properties</code> 或<code>application-test.yml</code></li><li><code>application-prod.properties</code> 或<code>application-prod.yml</code></li></ul></li></ul><h5 id="2、多profile文档块形式"><a href="#2、多profile文档块形式" class="headerlink" title="2、多profile文档块形式"></a>2、多profile文档块形式</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8080</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">prod</span></span><br><span class="line"></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8081</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">test</span></span><br><span class="line">  </span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">server:</span></span><br><span class="line"><span class="attr">  port:</span> <span class="number">8082</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span> <span class="string">dev</span></span><br></pre></td></tr></table></figure><h3 id="激活方式"><a href="#激活方式" class="headerlink" title="激活方式"></a>激活方式</h3><h5 id="1、在yml或者properties中通过配置激活"><a href="#1、在yml或者properties中通过配置激活" class="headerlink" title="1、在yml或者properties中通过配置激活"></a>1、在yml或者properties中通过配置激活</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  profiles:</span></span><br><span class="line"><span class="attr">    active:</span> <span class="string">dev</span> <span class="comment"># 激活开发环境</span></span><br></pre></td></tr></table></figure><h5 id="2、命令行激活"><a href="#2、命令行激活" class="headerlink" title="2、命令行激活"></a>2、命令行激活</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--spring.profiles.active=dev</span><br></pre></td></tr></table></figure><ul><li><p>此命令式在<code>IDEA</code>中<code>Program arguments</code>输入框中设置</p></li><li><p>部署到本地激活方式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod</span><br></pre></td></tr></table></figure></li></ul><h5 id="3、JVM虚拟机参数激活"><a href="#3、JVM虚拟机参数激活" class="headerlink" title="3、JVM虚拟机参数激活"></a>3、JVM虚拟机参数激活</h5><ul><li><p>在<code>IDEA</code>中<code>VM Options</code>中输入框中设置</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Dspring.profiles.active=dev</span><br></pre></td></tr></table></figure></li><li><p>部署到本地激活方式</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar -Dspring.profiles.active=<span class="built_in">test</span> demo-0.0.1-SNAPSHOT.jar</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置&quot;&gt;&lt;a href=&quot;#Profile是Spring对不同环境提供不同配置功能的支持，可以通过不同需求激活指定环境配置&quot; class=&quot;headerlink&quot; title
-      
-    
-    </summary>
-    
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
-    
-      <category term="Profile" scheme="http://blog.first-blood.cn/tags/Profile/"/>
-    
-      <category term="多环境配置" scheme="http://blog.first-blood.cn/tags/%E5%A4%9A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+      <category term="优先级" scheme="https://www.grails.tw/tags/%E4%BC%98%E5%85%88%E7%BA%A7/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot配置文件占位符</title>
-    <link href="http://blog.first-blood.cn/2018/11/07/SpringBoot%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
-    <id>http://blog.first-blood.cn/2018/11/07/SpringBoot配置文件占位符/</id>
+    <link href="https://www.grails.tw/2018/11/07/SpringBoot%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
+    <id>https://www.grails.tw/2018/11/07/SpringBoot配置文件占位符/</id>
     <published>2018-11-07T09:18:14.417Z</published>
     <updated>2018-11-07T09:18:14.417Z</updated>
     
@@ -330,23 +330,23 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
+      <category term="SpringBoot" scheme="https://www.grails.tw/tags/SpringBoot/"/>
     
-      <category term="占位符" scheme="http://blog.first-blood.cn/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
+      <category term="占位符" scheme="https://www.grails.tw/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
     
-      <category term="默认值" scheme="http://blog.first-blood.cn/tags/%E9%BB%98%E8%AE%A4%E5%80%BC/"/>
+      <category term="默认值" scheme="https://www.grails.tw/tags/%E9%BB%98%E8%AE%A4%E5%80%BC/"/>
     
-      <category term="SpEL" scheme="http://blog.first-blood.cn/tags/SpEL/"/>
+      <category term="SpEL" scheme="https://www.grails.tw/tags/SpEL/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot单元测试</title>
-    <link href="http://blog.first-blood.cn/2018/11/07/SpringBoot%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
-    <id>http://blog.first-blood.cn/2018/11/07/SpringBoot单元测试/</id>
+    <link href="https://www.grails.tw/2018/11/07/SpringBoot%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+    <id>https://www.grails.tw/2018/11/07/SpringBoot单元测试/</id>
     <published>2018-11-07T07:29:42.263Z</published>
     <updated>2018-11-07T07:29:42.263Z</updated>
     
@@ -361,27 +361,27 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
+      <category term="SpringBoot" scheme="https://www.grails.tw/tags/SpringBoot/"/>
     
-      <category term="yaml" scheme="http://blog.first-blood.cn/tags/yaml/"/>
+      <category term="yaml" scheme="https://www.grails.tw/tags/yaml/"/>
     
-      <category term="yml" scheme="http://blog.first-blood.cn/tags/yml/"/>
+      <category term="yml" scheme="https://www.grails.tw/tags/yml/"/>
     
-      <category term="自定义yml" scheme="http://blog.first-blood.cn/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yml/"/>
+      <category term="自定义yml" scheme="https://www.grails.tw/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yml/"/>
     
-      <category term="自定义yaml" scheme="http://blog.first-blood.cn/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yaml/"/>
+      <category term="自定义yaml" scheme="https://www.grails.tw/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yaml/"/>
     
-      <category term="自定义properties" scheme="http://blog.first-blood.cn/tags/%E8%87%AA%E5%AE%9A%E4%B9%89properties/"/>
+      <category term="自定义properties" scheme="https://www.grails.tw/tags/%E8%87%AA%E5%AE%9A%E4%B9%89properties/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot中@PropertySource和@ImportResource以及@Bean</title>
-    <link href="http://blog.first-blood.cn/2018/11/07/SpringBoot%E4%B8%AD@PropertySource%E5%92%8C@ImportResource%E4%BB%A5%E5%8F%8A@Bean/"/>
-    <id>http://blog.first-blood.cn/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/</id>
+    <link href="https://www.grails.tw/2018/11/07/SpringBoot%E4%B8%AD@PropertySource%E5%92%8C@ImportResource%E4%BB%A5%E5%8F%8A@Bean/"/>
+    <id>https://www.grails.tw/2018/11/07/SpringBoot中@PropertySource和@ImportResource以及@Bean/</id>
     <published>2018-11-07T07:29:42.263Z</published>
     <updated>2018-11-07T07:32:42.682Z</updated>
     
@@ -398,27 +398,27 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
+      <category term="SpringBoot" scheme="https://www.grails.tw/tags/SpringBoot/"/>
     
-      <category term="yaml" scheme="http://blog.first-blood.cn/tags/yaml/"/>
+      <category term="yaml" scheme="https://www.grails.tw/tags/yaml/"/>
     
-      <category term="yml" scheme="http://blog.first-blood.cn/tags/yml/"/>
+      <category term="yml" scheme="https://www.grails.tw/tags/yml/"/>
     
-      <category term="自定义yml" scheme="http://blog.first-blood.cn/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yml/"/>
+      <category term="自定义yml" scheme="https://www.grails.tw/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yml/"/>
     
-      <category term="自定义yaml" scheme="http://blog.first-blood.cn/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yaml/"/>
+      <category term="自定义yaml" scheme="https://www.grails.tw/tags/%E8%87%AA%E5%AE%9A%E4%B9%89yaml/"/>
     
-      <category term="自定义properties" scheme="http://blog.first-blood.cn/tags/%E8%87%AA%E5%AE%9A%E4%B9%89properties/"/>
+      <category term="自定义properties" scheme="https://www.grails.tw/tags/%E8%87%AA%E5%AE%9A%E4%B9%89properties/"/>
     
   </entry>
   
   <entry>
     <title>yaml基本语法</title>
-    <link href="http://blog.first-blood.cn/2018/11/06/yaml%E7%94%A8%E6%B3%95/"/>
-    <id>http://blog.first-blood.cn/2018/11/06/yaml用法/</id>
+    <link href="https://www.grails.tw/2018/11/06/yaml%E7%94%A8%E6%B3%95/"/>
+    <id>https://www.grails.tw/2018/11/06/yaml用法/</id>
     <published>2018-11-06T08:57:44.717Z</published>
     <updated>2018-11-06T08:57:44.717Z</updated>
     
@@ -436,23 +436,23 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="yaml" scheme="http://blog.first-blood.cn/tags/yaml/"/>
+      <category term="yaml" scheme="https://www.grails.tw/tags/yaml/"/>
     
-      <category term="yml" scheme="http://blog.first-blood.cn/tags/yml/"/>
+      <category term="yml" scheme="https://www.grails.tw/tags/yml/"/>
     
-      <category term="application.yml" scheme="http://blog.first-blood.cn/tags/application-yml/"/>
+      <category term="application.yml" scheme="https://www.grails.tw/tags/application-yml/"/>
     
-      <category term="application.properties" scheme="http://blog.first-blood.cn/tags/application-properties/"/>
+      <category term="application.properties" scheme="https://www.grails.tw/tags/application-properties/"/>
     
   </entry>
   
   <entry>
     <title>windows以管理员运行快捷方式</title>
-    <link href="http://blog.first-blood.cn/2018/11/06/windows%E4%BB%A5%E7%AE%A1%E7%90%86%E5%91%98%E8%BF%90%E8%A1%8C%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
-    <id>http://blog.first-blood.cn/2018/11/06/windows以管理员运行快捷方式/</id>
+    <link href="https://www.grails.tw/2018/11/06/windows%E4%BB%A5%E7%AE%A1%E7%90%86%E5%91%98%E8%BF%90%E8%A1%8C%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
+    <id>https://www.grails.tw/2018/11/06/windows以管理员运行快捷方式/</id>
     <published>2018-11-06T08:57:44.716Z</published>
     <updated>2018-11-06T08:57:44.716Z</updated>
     
@@ -467,19 +467,19 @@
     
     </summary>
     
-      <category term="Windows技巧" scheme="http://blog.first-blood.cn/categories/Windows%E6%8A%80%E5%B7%A7/"/>
+      <category term="Windows技巧" scheme="https://www.grails.tw/categories/Windows%E6%8A%80%E5%B7%A7/"/>
     
     
-      <category term="Windows" scheme="http://blog.first-blood.cn/tags/Windows/"/>
+      <category term="Windows" scheme="https://www.grails.tw/tags/Windows/"/>
     
-      <category term="bat" scheme="http://blog.first-blood.cn/tags/bat/"/>
+      <category term="bat" scheme="https://www.grails.tw/tags/bat/"/>
     
   </entry>
   
   <entry>
     <title>SpringBoot读取yaml配置</title>
-    <link href="http://blog.first-blood.cn/2018/11/06/SpringBoot%E8%AF%BB%E5%8F%96yaml%E9%85%8D%E7%BD%AE/"/>
-    <id>http://blog.first-blood.cn/2018/11/06/SpringBoot读取yaml配置/</id>
+    <link href="https://www.grails.tw/2018/11/06/SpringBoot%E8%AF%BB%E5%8F%96yaml%E9%85%8D%E7%BD%AE/"/>
+    <id>https://www.grails.tw/2018/11/06/SpringBoot读取yaml配置/</id>
     <published>2018-11-06T08:57:44.714Z</published>
     <updated>2018-11-06T09:31:57.644Z</updated>
     
@@ -494,25 +494,25 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="SpringBoot" scheme="http://blog.first-blood.cn/tags/SpringBoot/"/>
+      <category term="SpringBoot" scheme="https://www.grails.tw/tags/SpringBoot/"/>
     
-      <category term="yaml" scheme="http://blog.first-blood.cn/tags/yaml/"/>
+      <category term="yaml" scheme="https://www.grails.tw/tags/yaml/"/>
     
-      <category term="yml" scheme="http://blog.first-blood.cn/tags/yml/"/>
+      <category term="yml" scheme="https://www.grails.tw/tags/yml/"/>
     
-      <category term="application.yml" scheme="http://blog.first-blood.cn/tags/application-yml/"/>
+      <category term="application.yml" scheme="https://www.grails.tw/tags/application-yml/"/>
     
-      <category term="application.properties" scheme="http://blog.first-blood.cn/tags/application-properties/"/>
+      <category term="application.properties" scheme="https://www.grails.tw/tags/application-properties/"/>
     
   </entry>
   
   <entry>
     <title>nginx配置proxy_pass后，访问时路径丢失怎么办</title>
-    <link href="http://blog.first-blood.cn/2018/11/01/nginx%E9%85%8D%E7%BD%AEproxy_pass%E5%90%8E%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%97%B6%E8%B7%AF%E5%BE%84%E4%B8%A2%E5%A4%B1%E6%80%8E%E4%B9%88%E5%8A%9E/"/>
-    <id>http://blog.first-blood.cn/2018/11/01/nginx配置proxy_pass后，访问时路径丢失怎么办/</id>
+    <link href="https://www.grails.tw/2018/11/01/nginx%E9%85%8D%E7%BD%AEproxy_pass%E5%90%8E%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%97%B6%E8%B7%AF%E5%BE%84%E4%B8%A2%E5%A4%B1%E6%80%8E%E4%B9%88%E5%8A%9E/"/>
+    <id>https://www.grails.tw/2018/11/01/nginx配置proxy_pass后，访问时路径丢失怎么办/</id>
     <published>2018-11-01T09:40:38.916Z</published>
     <updated>2018-11-01T09:42:42.636Z</updated>
     
@@ -528,17 +528,17 @@
     
     </summary>
     
-      <category term="运维" scheme="http://blog.first-blood.cn/categories/%E8%BF%90%E7%BB%B4/"/>
+      <category term="运维" scheme="https://www.grails.tw/categories/%E8%BF%90%E7%BB%B4/"/>
     
     
-      <category term="Nginx" scheme="http://blog.first-blood.cn/tags/Nginx/"/>
+      <category term="Nginx" scheme="https://www.grails.tw/tags/Nginx/"/>
     
   </entry>
   
   <entry>
     <title>StringUtils工具包join方法转字符</title>
-    <link href="http://blog.first-blood.cn/2018/11/01/StringUtils%E5%B7%A5%E5%85%B7%E5%8C%85join%E6%96%B9%E6%B3%95%E8%BD%AC%E5%AD%97%E7%AC%A6/"/>
-    <id>http://blog.first-blood.cn/2018/11/01/StringUtils工具包join方法转字符/</id>
+    <link href="https://www.grails.tw/2018/11/01/StringUtils%E5%B7%A5%E5%85%B7%E5%8C%85join%E6%96%B9%E6%B3%95%E8%BD%AC%E5%AD%97%E7%AC%A6/"/>
+    <id>https://www.grails.tw/2018/11/01/StringUtils工具包join方法转字符/</id>
     <published>2018-11-01T07:36:36.429Z</published>
     <updated>2018-11-01T08:52:24.924Z</updated>
     
@@ -557,17 +557,17 @@
     
     </summary>
     
-      <category term="后端" scheme="http://blog.first-blood.cn/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-      <category term="Java" scheme="http://blog.first-blood.cn/tags/Java/"/>
+      <category term="Java" scheme="https://www.grails.tw/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Oracle case when then分组排序</title>
-    <link href="http://blog.first-blood.cn/2018/11/01/Oracle%20case%20when%20then%E5%88%86%E7%BB%84%E6%8E%92%E5%BA%8F/"/>
-    <id>http://blog.first-blood.cn/2018/11/01/Oracle case when then分组排序/</id>
+    <link href="https://www.grails.tw/2018/11/01/Oracle%20case%20when%20then%E5%88%86%E7%BB%84%E6%8E%92%E5%BA%8F/"/>
+    <id>https://www.grails.tw/2018/11/01/Oracle case when then分组排序/</id>
     <published>2018-11-01T06:00:35.058Z</published>
     <updated>2018-11-06T08:57:44.713Z</updated>
     
@@ -583,17 +583,17 @@
     
     </summary>
     
-      <category term="数据库" scheme="http://blog.first-blood.cn/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="https://www.grails.tw/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="Oracle" scheme="http://blog.first-blood.cn/tags/Oracle/"/>
+      <category term="Oracle" scheme="https://www.grails.tw/tags/Oracle/"/>
     
   </entry>
   
   <entry>
     <title>nginx本地域名映射及tomcat集群session共享</title>
-    <link href="http://blog.first-blood.cn/2018/10/26/nginx%E6%9C%AC%E5%9C%B0%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84%E5%8F%8Atomcat%E9%9B%86%E7%BE%A4session%E5%85%B1%E4%BA%AB/"/>
-    <id>http://blog.first-blood.cn/2018/10/26/nginx本地域名映射及tomcat集群session共享/</id>
+    <link href="https://www.grails.tw/2018/10/26/nginx%E6%9C%AC%E5%9C%B0%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84%E5%8F%8Atomcat%E9%9B%86%E7%BE%A4session%E5%85%B1%E4%BA%AB/"/>
+    <id>https://www.grails.tw/2018/10/26/nginx本地域名映射及tomcat集群session共享/</id>
     <published>2018-10-26T08:34:00.483Z</published>
     <updated>2018-11-01T08:52:02.221Z</updated>
     
@@ -609,14 +609,14 @@
     
     </summary>
     
-      <category term="运维" scheme="http://blog.first-blood.cn/categories/%E8%BF%90%E7%BB%B4/"/>
+      <category term="运维" scheme="https://www.grails.tw/categories/%E8%BF%90%E7%BB%B4/"/>
     
     
-      <category term="Nginx" scheme="http://blog.first-blood.cn/tags/Nginx/"/>
+      <category term="Nginx" scheme="https://www.grails.tw/tags/Nginx/"/>
     
-      <category term="Tomcat" scheme="http://blog.first-blood.cn/tags/Tomcat/"/>
+      <category term="Tomcat" scheme="https://www.grails.tw/tags/Tomcat/"/>
     
-      <category term="Tomcat集群" scheme="http://blog.first-blood.cn/tags/Tomcat%E9%9B%86%E7%BE%A4/"/>
+      <category term="Tomcat集群" scheme="https://www.grails.tw/tags/Tomcat%E9%9B%86%E7%BE%A4/"/>
     
   </entry>
   

@@ -127,27 +127,6 @@
                       };
                   </script>
                 
-                  
-                    <div class="item">
-                  
-                    <img id="carousel-img2" src="https://source.unsplash.com/collection/954550/1920x1080">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img2 = new Image();
-                      var imageTag2 = document.getElementById("carousel-img2");
-                      img2.src = imageTag2.src;
-                      img2.onload=function(){
-                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag2.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag2.style.height = document.body.clientHeight + "px";
-                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
             </div>
 
             <!-- Controls -->
@@ -480,6 +459,68 @@ cd命令进入指定盘符（绝对路径）
 
 
   
+    <article id="post-Windows中Google浏览器主页被恶意串改" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/09/Windows中Google浏览器主页被恶意串改/">Windows中Google浏览器主页被恶意串改</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/09/Windows中Google浏览器主页被恶意串改/" class="article-date">
+	  <time datetime="2018-11-09T03:23:36.677Z" itemprop="datePublished">2018-11-09</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Windows/">Windows</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？
+
+1、浏览器地址栏目输入chrome://version，查看命令行看看是否正常
+
+很显然上图中的浏览器首页被篡改了，指向了后面的http地址
+
+2、通过Google浏览器设置查看启动时是否指定了http开头的地址
+
+你可以通过这个设置来修改，若无效，请接着往下看
+
+3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式
+4、双击打开测试...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/11/09/Windows中Google浏览器主页被恶意串改/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
     <article id="post-SpringBoot中的slf4j日志依赖关系" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
@@ -530,68 +571,6 @@ SpringBoot从maven依赖中剔除springframework:spring-core中的common-logging
         </p>
         <p class="article-more-link">
           <a href="/2018/11/09/SpringBoot中的slf4j日志依赖关系/#more">阅读全文</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-
-  
-    <article id="post-Windows中Google浏览器主页被恶意串改" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/11/09/Windows中Google浏览器主页被恶意串改/">Windows中Google浏览器主页被恶意串改</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/11/09/Windows中Google浏览器主页被恶意串改/" class="article-date">
-	  <time datetime="2018-11-09T03:23:36.677Z" itemprop="datePublished">2018-11-09</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/Windows/">Windows</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p class="article-excerpt-content">
-          
-当我们打开浏览器的时候它自动打开了某某网站的首页，这个时候我们如果需要重新配置自己的主页，或者去掉它设置的主页，该怎么办呢？
-
-1、浏览器地址栏目输入chrome://version，查看命令行看看是否正常
-
-很显然上图中的浏览器首页被篡改了，指向了后面的http地址
-
-2、通过Google浏览器设置查看启动时是否指定了http开头的地址
-
-你可以通过这个设置来修改，若无效，请接着往下看
-
-3、打开Google浏览器目标位置，复制一份重命名，然后右键-发送到桌面快捷方式
-4、双击打开测试...
-        </p>
-        <p class="article-more-link">
-          <a href="/2018/11/09/Windows中Google浏览器主页被恶意串改/#more">阅读全文</a>
         </p>
       
     </div>

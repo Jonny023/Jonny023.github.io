@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.grails.tw/"/>
-  <updated>2018-11-30T02:34:33.461Z</updated>
+  <updated>2018-12-14T05:42:09.550Z</updated>
   <id>https://www.grails.tw/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA运行maven项目properties未编译</title>
+    <link href="https://www.grails.tw/2018/12/14/IDEA%E8%BF%90%E8%A1%8Cmaven%E9%A1%B9%E7%9B%AEproperties%E6%9C%AA%E7%BC%96%E8%AF%91.html"/>
+    <id>https://www.grails.tw/2018/12/14/IDEA运行maven项目properties未编译.html</id>
+    <published>2018-12-14T05:39:58.495Z</published>
+    <updated>2018-12-14T05:42:09.550Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>问题分析</p></blockquote><ul><li><code>maven</code>项目在<code>idea</code>中不会自动编译<code>properties</code>文件，需手动配置</li><li>通过<code>XxxUtils.class.getResourceAsStream(&quot;/com/test/abc.properties&quot;)</code>加载不到<code>abc.properties</code>，但是第二次调用方法可以加载</li></ul><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>test<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">defaultGoal</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">defaultGoal</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--编译之后包含xml--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/*.java<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--解决maven项目resources目录显示为普通目录问题--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;问题分析&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;maven&lt;/code&gt;项目在&lt;code&gt;idea&lt;/code&gt;中不会自动编译&lt;code&gt;properties&lt;/code&gt;文件，需手动配置&lt;/li&gt;
+&lt;li&gt;通过&lt;cod
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="https://www.grails.tw/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="idea" scheme="https://www.grails.tw/tags/idea/"/>
+    
+      <category term="maven" scheme="https://www.grails.tw/tags/maven/"/>
+    
+      <category term="build" scheme="https://www.grails.tw/tags/build/"/>
+    
+      <category term="properties" scheme="https://www.grails.tw/tags/properties/"/>
+    
+  </entry>
   
   <entry>
     <title>Grails3文件上传到腾讯COS(OSS)</title>
